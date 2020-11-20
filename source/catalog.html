@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/74x23" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-main__header">Фотографии пользователей</h1>
+    <section class="pictures">
+      <h2 class="visually-hidden">Пример фотографий</h2>
+
+
+      <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
+
+      <ul class="pictures__list">
+        <li class="pictures__item">
+          <a class="pictures__link"><img class="pictures__main-image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны"></a>
+          <div class="pictures__author-info">
+            <p class="pictures__author-name">Анна <span class="pictures__time-post">(5 минут назад)</span></p>
+            <p class="pictures__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <button class="pictures__button" type="button" name="like">
+              <span class="visually-hidden">Нравится</span>
+            </button>
+            <span class="pictures__heart">нравится: 215</span>
+          </div>
+        </li>
+        <li class="pictures__item">
+          <a class="pictures__link"><img class="pictures__author-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото Левона"></a>
+          <div class="pictures__author-info">
+            <p class="pictures__author-name">Левон <span class="pictures__time-post">(5 часов назад)</span></p>
+            <p class="pictures__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="pictures__button" type="button" name="like">
+              <span class="visually-hidden">Нравится</span>
+            </button>
+            <span class="pictures__heart">нравится: 356</span>
+          </div>
+        </li>
+        <li class="pictures__item">
+          <a class="pictures__link"><img class="pictures__author-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Антона"></a>
+          <div class="pictures__author-info">
+            <p class="pictures__author-name">Антон <span class="pictures__time-post">(12 часов назад)</span></p>
+            <p class="pictures__text">Соседи будут рады!</p>
+            <button class="pictures__button" type="button" name="like">
+              <span class="visually-hidden">Нравится</span>
+            </button>
+            <span class="pictures__heart">нравится: 666</span>
+          </div>
+        </li>
+        <li class="pictures__item">
+          <a class="pictures__link"><img class="pictures__author-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото Бориса"></a>
+          <div class="pictures__author-info">
+            <p class="pictures__author-name">Борис <span class="pictures__time-post">(20 часов назад)</span></p>
+            <p class="pictures__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="pictures__button" type="button" name="like">
+              <span class="visually-hidden">Нравится</span>
+            </button>
+            <span class="pictures__heart">нравится: 215</span>
+          </div>
+        </li>
+        <li class="pictures__item">
+          <a class="pictures__link"><img class="pictures__author-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото Сергея"></a>
+          <div class="pictures__author-info">
+            <p class="pictures__author-name">Сергей <span class="pictures__time-post">(25 часов назад)</span></p>
+            <p class="pictures__text">Самая кубанская в мире!</p>
+            <button class="pictures__button" type="button" name="like">
+              <span class="visually-hidden">Нравится</span>
+            </button>
+            <span class="pictures__heart">нравится: 4</span>
+          </div>
+        </li>
+        <li class="pictures__item">
+          <a class="pictures__link"><img class="pictures__author-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото Сергея"></a>
+          <div class="pictures__author-info">
+            <p class="pictures__author-name">Максим <span class="pictures__time-post">(40 часов назад)</span></p>
+            <p class="pictures__text">Где снег-то?</p>
+            <button class="pictures__button" type="button" name="like">
+              <span class="visually-hidden">Нравится</span>
+            </button>
+            <span class="pictures__heart">нравится: 150</span>
+          </div>
+        </li>
+        <li class="pictures__item">
+          <a class="pictures__link"><img class="pictures__author-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото Надежды"></a>
+          <div class="pictures__author-info">
+            <p class="pictures__author-name">Надежда <span class="pictures__time-post">(45 часов назад)</span></p>
+            <p class="pictures__text">Всем GM и взаимные лайки!</p>
+            <button class="pictures__button" type="button" name="like">
+              <span class="visually-hidden">Нравится</span>
+            </button>
+            <span class="pictures__heart">нравится: 2560</span>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+    <section class="picture-maker">
+      <h2 class="visually-hidden">Изготовление фотографий</h2>
+      <p class="picture-maker__name">Затмите их всех!</p>
+      <p class="picture-maker__name">Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="picture-maker__tool">
+        <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Пример фотографии">
+        <form class="picture-maker__filter" action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="picture-maker__slidecontainer">
+            <button class="picture-maker__toggle picture-maker__toggle--active" type="button">
+              <span class="visually-hidden">обрезать</span>
+            </button>
+            <button class="picture-maker__toggle" type="button">
+              <span class="visually-hidden">залить</span>
+            </button>
+            <button class="picture-maker__toggle" type="button">
+              <span class="visually-hidden">контраст</span>
+            </button>
+            <input type="range" min="1" max="100" value="85" class="picture-maker__slider" id="crop">
+            <input type="range" min="1" max="100" value="85" class="picture-maker__slider" id="fill">
+            <input type="range" min="1" max="100" value="85" class="picture-maker__slider" id="contrast">
+          </div>
+          <div class="picture-maker__buttons">
+            <button class="picture-maker__button picture-maker__button-submit" type="submit" name="Запостить">Запостить</button>
+            <button class="picture-maker__button picture-maker__button-cancel" type="reset" name="Отмена">Отмена</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__link" href="index.html">
+      <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Пинк">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="html academy"> </a>
+    </div>
+  </footer>
+</body>
+
+</html>
