@@ -1,3 +1,7 @@
+.prices {
+  background-color: @background-color_pictures-list;
+}
+
 .prices__table {
   width: 100%;
 }
@@ -7,16 +11,11 @@
   empty-cells: hide;
 }
 
-.prices {
-  background-color: @background-color_pictures-list;
-}
-
 .prices__black-cell {
   width: 152px;
   height: 75px;
-  background: @background-color_main-nav;
-  border: 2px solid @background-color_main-nav;
-  border-radius: 1px 0 0 0;
+  background: @midnight;
+  border: 2px solid @midnight;
   text-align: center;
 }
 
@@ -49,5 +48,25 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  color: @background-color_main-nav;
+  color: @midnight;
+}
+
+.prices__row:first-of-type th{
+border-radius: 10px 0 0 0;
+}
+
+.prices__row:nth-child(3) th {
+border-radius:  0 0 0 10px;
+}
+
+.prices__row:nth-child(3) td:nth-child(4)  {
+border-radius:  0 0 10px 0 ;
+}
+
+ .prices__row .prices__black-cell:nth-child(2) {
+  border-radius: 10px 0 0 0;
+}
+
+.prices__row .prices__black-cell:nth-child(4) {
+ border-radius: 0 10px 0 0;
 }
