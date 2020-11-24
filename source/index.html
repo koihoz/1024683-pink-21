@@ -4,31 +4,35 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/74x23" alt="Пинк">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">HTML Academy</a>
-        </li>
-      </ul>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/74x23" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+    </div>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item site-list__item--active">
+        <a>Главная</a>
+      </li>
+      <li class="site-list__item">
+        <a href="photo.html">Фотографии</a>
+      </li>
+      <li class="site-list__item">
+        <a href="form.html">Конкурс</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">HTML Academy</a>
+      </li>
+    </ul>
     </nav>
   </header>
 
@@ -37,7 +41,7 @@
     <section class="hero">
       <h2 class="visually-hidden">Скачать приложение</h2>
       <div class="hero__promotion">
-        <b class="hero__links-text"> Взгляните на жизнь иначе! </b>
+        <p class="hero__links-text"> Взгляните на жизнь иначе! </p>
         <img src="https://via.placeholder.com/320x286" alt="Образец работы приложения">
       </div>
       <div class="downloads">
@@ -50,9 +54,9 @@
           </li>
           <li class="downloads__link">
             <a class="downloads__link--googleplay" href="https://store.google.com/regionpicker">
-            <span class="visually-hidden">Google play</span>
-          </a>
-        </li>
+              <span class="visually-hidden">Google play</span>
+            </a>
+          </li>
           <li class="downloads__link">
             <a class="downloads__link--microsoftstore" href="https://www.microsoft.com/ru-tm/store/b/home">
               <span class="visually-hidden">Microsoft store</span>
@@ -169,7 +173,7 @@
         </li>
       </ul>
     </section>
-    <iframe
+    <iframe class="map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.965998559191!2d30.320044615957222!3d59.932706369539424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963104349069f3%3A0x3c4f4cc84a20de7f!2z0JrQsNC30LDQvdGB0LrQsNGPINGD0LsuLCA4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1597921019375!5m2!1sru!2sru"
       width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
     </iframe>

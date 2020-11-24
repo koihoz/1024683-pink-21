@@ -1,0 +1,71 @@
+.prices {
+  background-color: @background-color_pictures-list;
+}
+
+.prices__table {
+  width: 100%;
+}
+
+.prices__table td {
+  border: 2px solid #e5e5e5;
+}
+
+.prices__black-cell {
+  width: 152px;
+  height: 75px;
+  background: @midnight;
+  border: 2px solid @midnight;
+  text-align: center;
+}
+
+.prices__white-cell {
+  width: 153px;
+  height: 45px;
+  background: @color-white;
+  border: 2px solid @color-border-grey;
+}
+
+.prices__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @color-white;
+  margin: 0;
+}
+
+.prices__cost {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @color-white;
+  margin: 0;
+}
+
+.prices__row th {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: @midnight;
+}
+
+.prices__row:first-of-type th {
+  border-radius: 10px 0 0 0;
+}
+
+.prices__row:nth-child(3) th {
+  border-radius: 0 0 0 10px;
+}
+
+.prices__row:nth-child(3) td:nth-child(4) {
+  border-radius: 0 0 10px 0;
+}
+
+.prices__row .prices__black-cell:nth-child(2) {
+  border-radius: 10px 0 0 0;
+}
+
+.prices__row .prices__black-cell:nth-child(4) {
+  border-radius: 0 10px 0 0;
+}
