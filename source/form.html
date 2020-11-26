@@ -10,6 +10,7 @@
 
 <body class="page__body">
   <header class="page-header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo">
       <img src="https://via.placeholder.com/74x23" alt="Пинк">
     </a>
@@ -17,6 +18,7 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="index.html">Главная</a>
@@ -35,22 +37,24 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-main__image">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
     <section class="forms">
       <h2 class="visually-hidden">Форма для заполнения</h2>
       <p class="forms__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <p class="forms__request">Пожалуйста, заполните форму ниже:</p>
       <form class="forms__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="text-boxes">
+        <fieldset class="text-fields">
           <legend class="visually-hidden">Заполнение личных данных</legend>
-          <label class="text-boxes__label text-box" for="surname">Фамилия:
-            <input class="text-box__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+          <label class="text-fields__label text-field" for="surname">Фамилия:
+            <input class="text-field__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
           </label>
-          <label class="text-boxes__label text-box" for="name">Имя:
-            <input class="text-box__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+          <label class="text-fields__label text-field" for="name">Имя:
+            <input class="text-field__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
           </label>
-          <label class="text-boxes__label text-box" for="second_name">Отчество:
-            <input class="text-box__input" type="text" name="second name" id="second_name" placeholder="Ну и отчество тоже">
+          <label class="text-fields__label text-field" for="second_name">Отчество:
+            <input class="text-field__input" type="text" name="second name" id="second_name" placeholder="Ну и отчество тоже">
           </label>
         </fieldset>
         <fieldset class="checkboxes">
@@ -74,13 +78,13 @@
             <input class="checkbox__input" type="checkbox" name="hotel" id="hotel">
           </label>
         </fieldset>
-        <fieldset class="text-boxes">
-          <legend class="text-boxes__legend">контактная информация</legend>
-            <label class="text-boxes__label text-box" for="phone">Номер телефона
-            <input class="text-box__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+        <fieldset class="text-fields">
+          <legend class="text-fields__legend">контактная информация</legend>
+          <label class="text-fields__label text-field" for="phone">Номер телефона
+            <input class="text-field__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
           </label>
-            <label class="text-boxes__label text-box" for="post">Адрес почты
-            <input class="text-box__input" type="email" name="post" id="post" placeholder="Введите почту *">
+          <label class="text-fields__label text-field" for="post">Адрес почты
+            <input class="text-field__input" type="email" name="post" id="post" placeholder="Введите почту *">
           </label>
         </fieldset>
         <fieldset class="apps">
