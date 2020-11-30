@@ -10,39 +10,38 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/74x23" alt="Пинк">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">HTML Academy</a>
-        </li>
-      </ul>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/74x23" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+    </div>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="site-list__item site-list__item--active">
+        <a>Фотографии</a>
+      </li>
+      <li class="site-list__item">
+        <a href="form.html">Конкурс</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">HTML Academy</a>
+      </li>
+    </ul>
     </nav>
   </header>
-
   <main class="page-main">
-    <h1 class="page-main__header">Фотографии пользователей</h1>
+    <div class="page-main__image">
+      <h1 class="page-main__header">Фотографии пользователей</h1>
+    </div>
     <section class="pictures">
       <h2 class="visually-hidden">Пример фотографий</h2>
-
-
-      <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-
-
+      <p class="pictures__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <ul class="pictures__list">
         <li class="pictures__item">
           <a class="pictures__link"><img class="pictures__main-image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны"></a>
@@ -122,7 +121,6 @@
           </div>
         </li>
       </ul>
-
     </section>
     <section class="picture-maker">
       <h2 class="visually-hidden">Изготовление фотографий</h2>
@@ -135,15 +133,15 @@
             <button class="picture-maker__toggle picture-maker__toggle--active" type="button">
               <span class="visually-hidden">обрезать</span>
             </button>
+            <input class="picture-maker__slider" type="range" min="1" max="100" value="85"  id="crop">
             <button class="picture-maker__toggle" type="button">
               <span class="visually-hidden">залить</span>
             </button>
+            <input class="picture-maker__slider" type="range" min="1" max="100" value="85" id="fill">
             <button class="picture-maker__toggle" type="button">
               <span class="visually-hidden">контраст</span>
             </button>
-            <input type="range" min="1" max="100" value="85" class="picture-maker__slider" id="crop">
-            <input type="range" min="1" max="100" value="85" class="picture-maker__slider" id="fill">
-            <input type="range" min="1" max="100" value="85" class="picture-maker__slider" id="contrast">
+            <input class="picture-maker__slider" type="range" min="1" max="100" value="85" id="contrast">
           </div>
           <div class="picture-maker__buttons">
             <button class="picture-maker__button picture-maker__button-submit" type="submit" name="Запостить">Запостить</button>
