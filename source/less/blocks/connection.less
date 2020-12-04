@@ -30,3 +30,27 @@
   text-decoration: none;
   text-align: center;
 }
+@media (min-width: @tablet-width) {
+  .connection__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .connection__links-item {
+    width: 50%;
+  }
+}
+@media (min-width: @desktop-width) {
+  .connection__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .connection__links-item {
+    width: 33%;
+  }
+}

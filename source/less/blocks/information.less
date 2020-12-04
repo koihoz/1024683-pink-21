@@ -11,6 +11,7 @@
   padding-left: 0;
   background-color: @background-color_pictures-list;
   padding-bottom: 350px;
+  margin: 0;
 }
 
 .information__advantages-item h3 {
@@ -27,4 +28,18 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+@media (min-width: @tablet-width) {
+  .information__advantages {
+    padding-bottom: 0;
+    padding-left: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information__advantages {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+  }
 }
