@@ -47,12 +47,14 @@
 
 @media (min-width: @desktop-width) {
   .connection__links {
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
   }
 
   .connection__links-item {
     width: 33%;
+  }
+
+  .connection__links-item:nth-child(2) {
+    order: 2;
   }
 }

@@ -1,3 +1,9 @@
+
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -23,14 +29,10 @@
   font-size: 14px;
   line-height: 30px;
   color: @midnight;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
-  .reviews__author-info {
-    display: flex;
-    flex-direction: column;
-  }
-
   .reviews__text {
     order: -1;
   }
