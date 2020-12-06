@@ -6,18 +6,16 @@
 .hero__promotion {
   background: url("../img/back-mobile.png");
   background-size: cover;
-  padding-top: 29px;
+  padding-top: 22px;
 }
 
 .hero__links-text {
   color: @color-white;
   font-weight: 300;
   font-size: 24px;
-  line-height: 28.8px;
   text-align: center;
-  margin: 0;
+  margin: 0 20px 34px;
 }
-
 @media (min-width: @tablet-width) {
   .hero {
     background: url("../img/back-mobile.png");
@@ -25,6 +23,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero__promotion {
+    background: none;
   }
 
   .hero__links-text {
@@ -35,5 +37,11 @@
   .hero__img {
     position: absolute;
     right: 40px;
+    bottom: 17px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .hero__img {
+    bottom: 145px;
   }
 }
