@@ -5,6 +5,9 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header__logo {
@@ -12,8 +15,16 @@
   margin-top: 23px;
 }
 
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    width: 660px;
+  }
+}
 
 @media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    max-width: 1200px;
+  }
   .page-header {
     display: grid;
     grid-template-columns: 25% 75%;

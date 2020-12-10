@@ -13,3 +13,18 @@
   line-height: 30px;
   color: @red;
 }
+
+.text-fields__legend {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .text-fields:nth-child(3) {
+    border: 2px solid @color-border-grey;
+    border-radius: 1px;
+  }
+
+  .text-fields__legend {
+    display: block;
+  }
+}

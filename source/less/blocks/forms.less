@@ -1,15 +1,44 @@
 .forms__text {
-  width: 280px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 55px;
+  margin-top: 54px;
   color: @midnight;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .forms__request {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .forms__text {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-left: 65px;
+    margin-right: 65px;
+  }
+
+  .forms__request {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .forms__text {
+    display: inline;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .forms__request {
+    display: inline;
+  }
 }
