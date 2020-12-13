@@ -111,29 +111,29 @@
         <p>Устали от серости мегаполиса?</p>
         <p>Нам есть, что вам предложить!</p>
       </div>
-
-      <ul class="information__advantages">
-        <li class="information__advantages-item">
-          <h3>Поднимает настроение</h3>
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="information__advantages-item">
-          <h3>Меняет мир вокруг</h3>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="information__advantages-item">
-          <h3>Заводит новых друзей</h3>
-          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-
+      <div class="information__wrapper">
+        <ul class="information__advantages">
+          <li class="information__advantages-item">
+            <h3>Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="information__advantages-item">
+            <h3>Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="information__advantages-item">
+            <h3>Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="promotion">
       <div class="promotion__wrapper">
-      <h2 class="promotion__title">Эффект на 24 часа!</h2>
-      <p class="promotion__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-      <a class="promotion__link" href="https://htmlacademy.ru/intensive/adaptive">Узнать больше об исследовании</a>
+        <h2 class="promotion__title">Эффект на 24 часа!</h2>
+        <p class="promotion__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="promotion__link" href="https://htmlacademy.ru/intensive/adaptive">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="reviews container">
@@ -158,51 +158,53 @@
       </p>
     </section>
     <section class="prices">
-      <h2 class="visually-hidden">Прейскурант цен</h2>
-      <table class="prices__table">
-        <thead>
-          <tr class="prices__row">
-            <td></td>
-            <td class="prices__black-cell">
-              <p class="prices__name">База</p>
-              <p class="prices__cost">1,99 usd</p>
-            </td>
-            <td class="prices__black-cell">
-              <p class="prices__name">Стандарт</p>
-              <p class="prices__cost">3,99 usd</p>
-            </td>
-            <td class="prices__black-cell">
-              <p class="prices__name">Анлим</p>
-              <p class="prices__cost">9,99 usd</p>
-            </td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="prices__row">
-            <th class="prices__white-cell">Розовый фильтр</th>
-            <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
-            <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
-            <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
-          </tr>
-          <tr class="prices__row">
-            <th class="prices__white-cell">Смайлики</th>
-            <td class="prices__white-cell"><span class="visually-hidden">Не входит</span></td>
-            <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
-            <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
-          </tr>
-          <tr class="prices__row">
-            <th class="prices__white-cell">Комментарии</th>
-            <td class="prices__white-cell"><span class="visually-hidden">Не входит</span></td>
-            <td class="prices__white-cell"><span class="visually-hidden">Не входит</span></td>
-            <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="prices__toggles">
-        <button class="prices__toggle" type="button"><span class="visually-hidden">слайд №1</span></button>
-        <button class="prices__toggle prices__toggle--current" type="button"><span class="visually-hidden">слайд №2</span></button>
-        <button class="prices__toggle" type="button"><span class="visually-hidden">слайд №3</span></button>
-      </p>
+      <div class="prices__wrapper">
+        <h2 class="visually-hidden">Прейскурант цен</h2>
+        <table class="prices__table">
+          <thead>
+            <tr class="prices__row">
+              <td class="prices__empty-cell"></td>
+              <td class="prices__black-cell">
+                <p class="prices__name">База</p>
+                <p class="prices__cost">1,99 usd</p>
+              </td>
+              <td class="prices__black-cell">
+                <p class="prices__name">Стандарт</p>
+                <p class="prices__cost">3,99 usd</p>
+              </td>
+              <td class="prices__black-cell">
+                <p class="prices__name">Анлим</p>
+                <p class="prices__cost">9,99 usd</p>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="prices__row">
+              <th class="prices__white-cell">Розовый фильтр</th>
+              <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
+              <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
+              <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
+            </tr>
+            <tr class="prices__row">
+              <th class="prices__white-cell">Смайлики</th>
+              <td class="prices__white-cell"><span class="visually-hidden">Не входит</span></td>
+              <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
+              <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
+            </tr>
+            <tr class="prices__row">
+              <th class="prices__white-cell">Комментарии</th>
+              <td class="prices__white-cell"><span class="visually-hidden">Не входит</span></td>
+              <td class="prices__white-cell"><span class="visually-hidden">Не входит</span></td>
+              <td class="prices__white-cell"><span class="visually-hidden">Входит</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="prices__toggles">
+          <button class="prices__toggle" type="button"><span class="visually-hidden">слайд №1</span></button>
+          <button class="prices__toggle prices__toggle--current" type="button"><span class="visually-hidden">слайд №2</span></button>
+          <button class="prices__toggle" type="button"><span class="visually-hidden">слайд №3</span></button>
+        </p>
+      </div>
     </section>
     <section class="connection">
       <h2 class="visually-hidden">Контакты</h2>
