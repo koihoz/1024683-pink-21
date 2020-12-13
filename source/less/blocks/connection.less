@@ -30,3 +30,39 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .connection__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .connection__links-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .connection {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .connection__links {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .connection__links-item {
+    width: 33%;
+  }
+
+  .connection__links-item:nth-child(2) {
+    order: 2;
+  }
+}

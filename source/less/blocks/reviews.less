@@ -1,13 +1,27 @@
+
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .reviews__author-name {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: @color-black;
+  text-align: center;
 }
 
 .reviews__author-age {
   display: none;
+  text-align: center;
 }
 
 .reviews__text {
@@ -15,4 +29,15 @@
   font-size: 14px;
   line-height: 30px;
   color: @midnight;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__text {
+    order: -1;
+  }
+
+  .reviews__author-age {
+    display: block;
+  }
 }

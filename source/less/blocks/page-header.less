@@ -1,8 +1,39 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: @midnight;
+  color: @color-white;
 }
 
-.page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
+.page-header__logo {
+  display: block;
+  padding-top: 23px;
+  padding-left: 20px;
+  padding-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 960px;
+  }
 }

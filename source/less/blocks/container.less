@@ -1,0 +1,17 @@
+// от 320px мобильная версия
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+// от 660px планшетная версия
+@media (min-width: @tablet-width) {
+  .container {
+    width: 660px;
+  }
+}
+// от 960px десктопная версия
+@media (min-width: @desktop-width) {
+  .container {
+    width: 960px;
+  }
+}
