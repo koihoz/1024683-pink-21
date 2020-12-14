@@ -8,7 +8,6 @@
   margin-bottom: 29px;
 }
 
-
 @media (min-width: @tablet-width) {
   .text-field {
     display: flex;
@@ -20,5 +19,17 @@
     margin-top: 0;
     margin-bottom: 56px;
     margin-left: 20px;
+  }
+
+  .text-fields--border .text-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-fields--border .text-field__input {
+    order: -1;
+    margin-bottom: 0;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }

@@ -1,5 +1,10 @@
-.apps {
+.apps--wrapper {
   background: @background-color_pictures-list;
+}
+
+.apps {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 42px;
   padding-bottom: 54px;
   text-align: center;
@@ -14,4 +19,31 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+
+.apps__legend {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @red;
+}
+
+@media (min-width: @tablet-width) {
+  .apps--wrapper {
+    background: none;
+    order: 2;
+    grid-area: green;
+  }
+
+  .apps {
+    width: 616px;
+    border: 2px solid @color-border-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .apps {
+    width: 431px;
+  }
 }

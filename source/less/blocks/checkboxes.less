@@ -1,7 +1,12 @@
+.checkboxes__wrapper {
+  background: @background-color_pictures-list;
+}
+
 .checkboxes {
   display: flex;
   flex-direction: column;
-  background: @background-color_pictures-list;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 42px;
   border: none;
 }
@@ -15,8 +20,6 @@
   width: 230px;
   text-align: center;
   margin-top: 42px;
-  position: relative;
-  top: 30px;
 }
 
 .checkboxes__label {
@@ -24,4 +27,30 @@
   font-size: 18px;
   line-height: 30px;
   color: @midnight;
+}
+
+@media (min-width: @tablet-width) {
+  .checkboxes__wrapper {
+    background: none;
+    order: 4;
+    grid-area: black;
+  }
+
+  .checkboxes {
+    width: 616px;
+    border: 2px solid @color-border-grey;
+  }
+
+  .checkboxes__legend {
+    width: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkboxes {
+    width: 936px;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 38px 38px;
+  }
 }

@@ -17,3 +17,20 @@
   text-transform: uppercase;
   color: @color-white;
 }
+
+@media (min-width: @tablet-width) {
+  .submit {
+    order: 6;
+    grid-area: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 22px;
+    padding-right: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  padding-left: 132px;
+  padding-right: 129px;
+}
