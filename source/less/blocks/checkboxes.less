@@ -3,12 +3,15 @@
 }
 
 .checkboxes {
-  display: flex;
-  flex-direction: column;
   width: 280px;
   margin: 0 auto;
   padding-top: 42px;
   border: none;
+}
+
+.checkboxes__label--wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .checkboxes__legend {
@@ -49,8 +52,10 @@
 @media (min-width: @desktop-width) {
   .checkboxes {
     width: 936px;
+  }
+  .checkboxes__label--wrapper {
     display: grid;
-    grid-template-columns: 33% 34% 33%;
-    grid-template-rows: 38px 38px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
