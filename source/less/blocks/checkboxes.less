@@ -1,17 +1,8 @@
-.checkboxes__wrapper {
-  background: @background-color_pictures-list;
-}
-
 .checkboxes {
   width: 280px;
   margin: 0 auto;
   padding-top: 42px;
   border: none;
-}
-
-.checkboxes__label--wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .checkboxes__legend {
@@ -33,13 +24,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .checkboxes__wrapper {
-    background: none;
-    order: 4;
-    grid-area: black;
-    margin-top: 65px;
-  }
-
   .checkboxes {
     width: 616px;
     border: 2px solid @color-border-grey;
@@ -55,9 +39,27 @@
     width: 936px;
   }
 
-  .checkboxes__label--wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  .checkboxes__label:nth-of-type(1) {
+    order: 1;
+  }
+
+  .checkboxes__label:nth-of-type(2) {
+    order: 4;
+  }
+
+  .checkboxes__label:nth-of-type(3) {
+    order: 2;
+  }
+
+  .checkboxes__label:nth-of-type(4) {
+    order: 5;
+  }
+
+  .checkboxes__label:nth-of-type(5) {
+    order: 3;
+  }
+
+  .checkboxes__label:nth-of-type(6) {
+    order: 6;
   }
 }

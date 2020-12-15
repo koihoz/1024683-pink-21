@@ -10,7 +10,7 @@
   box-shadow: 0 7px 5px -5px rgba(0, 1, 1, 0.15);
 }
 
-.modal--background-success {
+.modal__background-success {
   background-color: @background-color_pictures-list;
   border-radius: 0 0 1px 1px;
   width: 320px;
@@ -58,11 +58,11 @@
     width: 460px;
   }
 
-  .modal--background-success {
+  .modal__background-success {
     width: 460px;
   }
 
-  .modal--background {
+  .modal__background {
     padding-left: 82px;
     padding-right: 82px;
   }
@@ -98,5 +98,25 @@
   .modal__button--error {
     padding-left: 135px;
     padding-right: 134px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal {
+    width: 780px;
+  }
+
+  .modal__background-error {
+    background-color: @background-color_pictures-list;
+    border-radius: 0 0 1px 1px;
+    width: 780px;
+    padding-left: 242px;
+    padding-right: 242px;
+  }
+
+  .modal__background-success {
+    width: 780px;
+    padding-left: 162px;
+    padding-right: 162px;
   }
 }
