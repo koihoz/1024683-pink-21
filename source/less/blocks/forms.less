@@ -1,3 +1,8 @@
+.forms__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .forms__text {
   font-weight: 400;
   font-size: 14px;
@@ -6,20 +11,45 @@
   margin-bottom: 55px;
   margin-top: 54px;
   color: @midnight;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .forms__request {
   display: none;
 }
 
+.forms__text-fields-wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.forms__checkboxes-wrapper {
+  background: @background-color_pictures-list;
+}
+
+.forms__checkboxes-label-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms__apps-wrapper {
+  background: @background-color_pictures-list;
+}
+
 @media (min-width: @tablet-width) {
+  .forms__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .forms__wrapper {
+    width: 490px;
+    margin-bottom: 82px;
+  }
+
   .forms__text {
     font-size: 18px;
     margin-bottom: 0;
-    margin-left: 65px;
-    margin-right: 65px;
   }
 
   .forms__request {
@@ -30,16 +60,70 @@
     text-align: center;
     margin-top: 0;
   }
+
+  .forms__text-fields-wrapper {
+    width: 660px;
+  }
+
+  .forms__text-fields-wrapper:nth-of-type(1) {
+    order: 1;
+    grid-area: red;
+  }
+
+  .forms__text-fields-wrapper:nth-of-type(3) {
+    order: 3;
+    grid-area: yellow;
+    margin-top: 65px;
+  }
+
+  .forms__checkboxes-wrapper {
+    background: none;
+    order: 4;
+    grid-area: black;
+    margin-top: 65px;
+  }
+
+  .forms__apps-wrapper {
+    background: none;
+    order: 2;
+    grid-area: green;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .forms__form {
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "red green" "yellow yellow" "black black" "grey grey" "white white";
+  }
+
+  .forms__wrapper {
+    width: 756px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
   .forms__text {
     display: inline;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .forms__request {
     display: inline;
+  }
+
+  .forms__text-fields-wrapper:nth-of-type(1) {
+    width: 433px;
+  }
+
+  .forms__text-fields-wrapper:nth-of-type(3) {
+    width: 932px;
+    padding: 0;
+  }
+
+  .forms__checkboxes-label-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

@@ -1,0 +1,122 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  margin: 10px auto;
+  padding-left: 22px;
+  padding-right: 22px;
+  box-shadow: 0 7px 5px -5px rgba(0, 1, 1, 0.15);
+}
+
+.modal__background-success {
+  background-color: @background-color_pictures-list;
+  border-radius: 0 0 1px 1px;
+  width: 320px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal__button {
+  color: @color-white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: @green;
+  border: 2px solid @green;
+  border-radius: 1px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-top: 40px;
+  margin-bottom: 54px;
+}
+
+.modal__button--error {
+  padding-left: 125px;
+  padding-right: 124px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    box-shadow: 0 5px 5px 0 rgba(0, 1, 1, 0.15);
+    width: 460px;
+  }
+
+  .modal__background-success {
+    width: 460px;
+  }
+
+  .modal__background {
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+
+  .modal__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .modal__button {
+    color: @color-white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: @green;
+    border: 2px solid @green;
+    border-radius: 1px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-top: 40px;
+    margin-bottom: 54px;
+  }
+
+  .modal__button--error {
+    padding-left: 135px;
+    padding-right: 134px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal {
+    width: 780px;
+  }
+
+  .modal__background-error {
+    background-color: @background-color_pictures-list;
+    border-radius: 0 0 1px 1px;
+    width: 780px;
+    padding-left: 242px;
+    padding-right: 242px;
+  }
+
+  .modal__background-success {
+    width: 780px;
+    padding-left: 162px;
+    padding-right: 162px;
+  }
+}

@@ -22,3 +22,30 @@
   color: @midnight;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .emotions {
+    order: 5;
+    grid-area: grey;
+  }
+
+  .emotions__border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid @color-border-grey;
+    border-radius: 1px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 53px;
+    margin-top: 70px;
+  }
+
+  .emotions__legend {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background-color: @color-white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

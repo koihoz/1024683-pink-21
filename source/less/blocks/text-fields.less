@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   border: none;
+  padding: 0;
 }
 
 .text-fields__label {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: @red;
@@ -19,12 +20,26 @@
 }
 
 @media (min-width: @tablet-width) {
-  .text-fields:nth-child(3) {
+  .text-fields--border {
     border: 2px solid @color-border-grey;
     border-radius: 1px;
   }
 
   .text-fields__legend {
     display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: @red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-fields--border {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
