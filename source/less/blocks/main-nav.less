@@ -8,6 +8,82 @@
   }
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-color: @midnight;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 50px;
+  height: 4px;
+  background-color: @color-white;
+  border-radius: 1px;
+  box-shadow: 0 8px 0 0 @color-white, 0 16px 0 0 @color-white;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @red;
+  box-shadow:
+    0 8px 0 0 @red,
+    0 16px 0 0 @red;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(@red, 30%);
+  box-shadow:
+    0 8px 0 0 fade(@red, 30%),
+    0 16px 0 0 fade(@red, 30%);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 9px;
+  right: -5px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 31px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: @color-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @red;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@red, 30%);
+  }
+}
+
+
 @media (min-width: @desktop-width) {
   .main-nav__toggle {
     display: none;
