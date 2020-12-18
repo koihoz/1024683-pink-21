@@ -7,13 +7,8 @@
 }
 
 .hero__wrapper {
-  display: flex;
-  flex-direction: column;
   max-width: 320px;
   margin: 0 auto;
-}
-
-.hero__promotion {
   padding-top: 22px;
 }
 
@@ -21,32 +16,38 @@
   color: @color-white;
   font-weight: 300;
   font-size: 24px;
+  line-height: 29px;
   text-align: center;
   margin-bottom: 34px;
   margin-top: 0;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: @tablet-width) {
-  .hero__wrapper {
-    max-width: 620px;
-    padding: 0 20px;
+  .hero {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     position: relative;
   }
 
-  .hero__promotion {
-    background: none;
+  .hero__wrapper {
+    max-width: 620px;
+    display: flex;
+    margin: 0;
   }
 
   .hero__links-text {
-    margin-top: 120px;
-    margin-left: 80px;
+    margin-top: 102px;
+    margin-left: 50px;
   }
 
   .hero__img {
     position: absolute;
     right: 40px;
-    bottom: -70px;
+    bottom: 0;
   }
 }
 
