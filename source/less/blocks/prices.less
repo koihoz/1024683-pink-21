@@ -1,12 +1,16 @@
 .prices {
   background-color: @background-color_pictures-list;
-  padding-top: 40px;
+  padding-top: 137px;
 }
 
 @media (max-width: @mobile-width-only) {
   .prices {
     overflow: hidden;
   }
+  .first-column {
+    display: none;
+  }
+
 }
 
 .prices__wrapper {
@@ -15,9 +19,10 @@
 }
 
 .prices__table {
-  width: 1120px;
+  width: 840px;
   margin-left: 50%;
   transform: translateX(-50%);
+  border-collapse: collapse;
 }
 
 .prices__table td {
@@ -29,12 +34,14 @@
 }
 
 .prices__black-cell {
+  width: 280px;
   background: @midnight;
   border: 2px solid @midnight;
   text-align: center;
 }
 
 .prices__white-cell {
+  width: 280px;
   background: @color-white;
   border: 2px solid @color-border-grey;
 }
@@ -49,7 +56,7 @@
 }
 
 .prices__cost {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
