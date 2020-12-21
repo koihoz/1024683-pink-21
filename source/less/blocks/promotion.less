@@ -6,16 +6,14 @@
 .promotion__title {
   margin: 0;
 }
-
 @media (max-width: @mobile-width-only) {
   .promotion {
     display: none;
   }
 }
-
 @media (min-width: @tablet-width) {
   .promotion {
-    padding-top: 158px;
+    padding-top: 105px;
     padding-bottom: 192px;
     background-color: @background-color_pictures-list;
   }
@@ -23,10 +21,31 @@
   .promotion__wrapper {
     width: 660px;
     margin: 0 auto;
-    padding: 0 20px 0 300px;
+    padding: 0 35px 0 330px;
+  }
+
+  .promotion__title {
+    color: @color-black;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+  .promotion__text {
+    color: @midnight;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+  }
+
+  .promotion__link {
+    color: @red;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .promotion__wrapper {
     width: 960px;
