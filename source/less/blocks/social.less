@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   padding-left: 60px;
-  margin-top: 27px;
+  margin-top: 33px;
 }
 
 .social__item a {
@@ -28,6 +28,14 @@
   border-radius: 27px;
 }
 
+.social__link--twitter:hover::after {
+  border-color: @midnight;
+}
+
+.social__link--twitter:active::after {
+  border-color: fade(@midnight, 10%);
+}
+
 .social__link--facebook {
   position: relative;
 
@@ -46,6 +54,14 @@
   border-radius: 27px;
 }
 
+.social__link--facebook:hover::after {
+  border-color: @midnight;
+}
+
+.social__link--facebook:active::after {
+  border-color: fade(@midnight, 10%);
+}
+
 .social__link--youtube {
   position: relative;
 }
@@ -61,4 +77,12 @@
   background-position: center;
   border: 3px solid fade(@midnight, 10%);
   border-radius: 27px;
+}
+
+.social__link--youtube:hover::after {
+  border-color: @midnight;
+}
+
+.social__link--youtube:active::after {
+  border-color: fade(@midnight, 10%);
 }
