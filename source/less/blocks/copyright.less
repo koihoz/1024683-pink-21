@@ -1,7 +1,26 @@
+.copyright {
+margin-top: 60px;
+}
+
 .copyright__text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @midnight;
+}
+
+.copyright__link {
+  position: relative;
+}
+
+.copyright__link::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  top: -7px;
+  right: -41px;
+  background-image: url("../img/html-academy.svg");
+  background-repeat: no-repeat;
 }

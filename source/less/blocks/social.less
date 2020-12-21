@@ -1,8 +1,64 @@
 .social {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 60px;
+  margin-top: 27px;
 }
 
 .social__item a {
   text-decoration: none;
   margin-right: 5px;
+}
+
+.social__link--twitter {
+  position: relative;
+}
+.social__link--twitter::after {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid fade(@midnight, 10%);
+  border-radius: 27px;
+}
+
+.social__link--facebook {
+  position: relative;
+
+}
+.social__link--facebook::after {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid fade(@midnight, 10%);
+  border-radius: 27px;
+}
+
+.social__link--youtube {
+  position: relative;
+}
+.social__link--youtube::after {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid fade(@midnight, 10%);
+  border-radius: 27px;
 }

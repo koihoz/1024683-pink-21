@@ -2,8 +2,7 @@
   background-image: url("../img/grey-background.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-top: 113px;
-  margin-top: 23px;
+  padding-top: 59px;
   overflow: hidden;
 }
 
@@ -14,17 +13,14 @@
 
 .prices__table {
   width: 840px;
+  margin-top: 79px;
   margin-left: 50%;
   transform: translateX(-50%);
   border-collapse: collapse;
 }
 
-.first-column {
+.prices__first-column {
   display: none;
-}
-
-.prices__table td {
-  border: 2px solid #e5e5e5;
 }
 
 .prices__empty-cell {
@@ -34,19 +30,53 @@
 .prices__black-cell {
   width: 280px;
   background: @midnight;
-  border: 2px solid @midnight;
   text-align: center;
+  border-right: 2px solid @color-border-grey;
 }
 
 .prices__white-cell {
+  position: relative;
   width: 280px;
   background: @color-white;
   border: 2px solid @color-border-grey;
+  padding-left: 22px;
+}
+
+.prices__white-cell--right::after {
+  content:"";
+  position: absolute;
+  width: 31px;
+  height: 21px;
+  top: 19px;
+  right: 17px;
+  background-image: url("../img/yes.svg");
+  background-repeat: no-repeat;
+}
+
+.prices__white-cell--wrong::after {
+  content:"";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 16px;
+  right: 19px;
+  background-image: url("../img/no.svg");
+  background-repeat: no-repeat;
+}
+
+.prices__second-row .prices__white-cell {
+  border-top: none;
+}
+
+
+.prices__white-cell p {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: @midnight;
-  text-align: center;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 13px;
 }
 
 .prices__name {
@@ -96,7 +126,7 @@
 
 .prices__toggle {
   padding: 0;
-  margin-top: 209px;
+  margin-top: 41px;
 }
 
 .prices__toggle--current {
@@ -140,7 +170,7 @@
   width: 153px;
 }
 
-  .first-column {
+  .prices__first-column {
     display: table-cell;
   }
 }
