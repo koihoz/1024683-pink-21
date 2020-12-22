@@ -39,6 +39,11 @@
   margin-bottom: 0;
 }
 
+.reviews__left-toggle,
+.reviews__right-toggle {
+  display: none;
+}
+
 .reviews__toggles {
   margin: 30px 0 0;
   display: flex;
@@ -72,8 +77,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reviews__text {
+  .reviews__texts {
     order: -1;
+  }
+
+  .reviews__text {
     font-size: 18px;
     line-height: 30px;
   }
@@ -100,6 +108,56 @@
   .reviews__text {
     margin-top: 170px;
     width: 688px;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .reviews__text::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    top: -112px;
+    right: 305px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__left-toggle,
+  .reviews__right-toggle {
+    display: block;
+    position: relative;
+    border: none;
+    margin-bottom: 40px;
+    background-color: @color-white;
+  }
+
+  .reviews__right-toggle::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: -19px;
+    right: -13px;
+    background-image: url("../img/right-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__left-toggle::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: -19px;
+    right: 4px;
+    background-image: url("../img/left-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__texts {
+    display: flex;
+    align-items: flex-end;
   }
 
   .reviews__author-name {

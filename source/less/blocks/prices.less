@@ -171,7 +171,7 @@
   }
 
   .prices__wrapper {
-    padding-bottom: 15px;
+    padding-bottom: 68px;
   }
 
   .prices__table {
@@ -219,9 +219,17 @@
     top: 10px;
     right: 61px;
   }
+
+  .prices__toggles {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .prices__wrapper {
+    padding-bottom: 111px;
+  }
+
   .prices__table {
     width: 940px;
   }
@@ -230,7 +238,31 @@
     background-image: url("../img/background-desktop-table.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding-top: 59px;
+    padding-top: 93px;
     overflow: hidden;
+  }
+
+  .prices__white-cell {
+    padding-left: 21px;
+  }
+
+  .prices__white-cell p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+  }
+
+  .prices__name {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 4px;
+  }
+
+  .prices__cost {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 1px;
+    padding-bottom: 20px;
   }
 }
