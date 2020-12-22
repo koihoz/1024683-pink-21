@@ -48,10 +48,14 @@
   text-align: center;
   margin: 12px 0 31px;
 }
+
 @media (min-width: @tablet-width) {
+  .information__wrapper {
+    background-image: url("../img/grey-background-advantages-tablet.svg");
+  }
 
   .information__advantages {
-    padding-top: 114px;
+    padding-top: 85px;
     padding-left: 330px;
     padding-bottom: 10px;
     width: 660px;
@@ -63,6 +67,7 @@
 
   .information__advantages-item p {
     text-align: left;
+    margin-top: 15px;
   }
 
   .information__promo p {
@@ -76,17 +81,16 @@
   }
 
   .information__promo p:last-child {
-    margin-top: 0;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 0 150px 29px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .information__advantages {
     display: grid;
     grid-template-columns: 252px 252px 252px;
     grid-gap: 68px;
-    padding-top: 432px;
+    padding-top: 396px;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
@@ -97,15 +101,27 @@
   .information__advantages-item h3 {
     text-align: center;
     font-size: 30px;
+    line-height: 30px;
   }
 
   .information__advantages-item p {
     text-align: center;
     font-size: 18px;
+    line-height: 30px;
+    margin-top: 21px;
+  }
+
+  .information__promo {
+    padding-top: 55px;
+  }
+
+  .information__promo p {
+    font-size: 50px;
+    line-height: 68px;
   }
 
   .information__promo p:last-child {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 250px;
+    margin-right: 250px;
   }
 }
