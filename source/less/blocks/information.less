@@ -29,6 +29,17 @@
   padding: 124px 20px 287px;
   margin: 0 auto;
   justify-content: center;
+  position: relative;
+}
+
+.information__advantages::after {
+  content: "";
+  position: absolute;
+  width: 157px;
+  height: 320px;
+  bottom: -43px;
+  left: 82px;
+  background-image: url("../img/iphone-mobile.svg");
 }
 
 .information__advantages-item h3 {
@@ -48,7 +59,6 @@
   text-align: center;
   margin: 12px 0 31px;
 }
-
 @media (min-width: @tablet-width) {
   .information__wrapper {
     background-image: url("../img/grey-background-advantages-tablet.svg");
@@ -59,6 +69,15 @@
     padding-left: 330px;
     padding-bottom: 10px;
     width: 660px;
+  }
+
+  .information__advantages::after {
+
+    width: 268px;
+    height: 547px;
+    bottom: -65px;
+    left: 20px;
+    background-image: url("../img/iphone-tablet.svg");
   }
 
   .information__advantages-item h3 {
@@ -84,7 +103,6 @@
     margin: 0 150px 29px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .information__advantages {
     display: grid;
@@ -96,6 +114,38 @@
     margin-left: auto;
     margin-right: auto;
     width: 960px;
+  }
+  .information__advantages::after {
+    background-image: none;
+  }
+
+  .information__advantages--dark-img,
+  .information__advantages--nowords-img,
+  .information__advantages--withwords-img {
+position: relative;
+  }
+
+  .information__advantages--dark-img::before,
+  .information__advantages--nowords-img::before,
+  .information__advantages--withwords-img::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 307px;
+    bottom: 289px;
+    left: -24px;
+  }
+
+  .information__advantages--dark-img::before {
+    background-image: url("../img/dark-img.svg");
+  }
+
+  .information__advantages--nowords-img::before {
+    background-image: url("../img/nowords.svg");
+  }
+
+  .information__advantages--withwords-img::before  {
+    background-image: url("../img/withwords.svg");
   }
 
   .information__advantages-item h3 {

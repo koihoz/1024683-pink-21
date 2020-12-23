@@ -17,6 +17,8 @@
   .promotion {
     padding-top: 95px;
     padding-bottom: 89px;
+    position: relative;
+    background-color: @color-white;
   }
 
   .promotion__wrapper {
@@ -30,6 +32,17 @@
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    position: relative;
+  }
+
+  .promotion__title::before {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    left: -310px;
+    top: -42px;
+    background-image: url("../img/clock-tablet.svg");
   }
 
   .promotion__text {
@@ -58,6 +71,14 @@
     background-color: @background-color_pictures-list;
     padding-top: 120px;
     padding-bottom: 110px;
+  }
+
+  .promotion__title::before {
+    width: 298px;
+    height: 345px;
+    left: -371px;
+    top: -93px;
+    background-image: url("../img/clock-desktop.svg");
   }
 
   .promotion__text {
