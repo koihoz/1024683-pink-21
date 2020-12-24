@@ -1,9 +1,11 @@
 .prices {
-  background-image: url("../img/grey-background.svg");
+  background-color: @background-color_pictures-list;
+  background-image: url("../img/Star1.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding-top: 59px;
+  background-size: 100% 19px;
+  padding-top: 22px;
   overflow: hidden;
+  margin-top: 37px;
 }
 
 .prices__wrapper {
@@ -68,7 +70,6 @@
   background-repeat: no-repeat;
   background-position: 232px 16px;
 }
-
 /*.prices__white-cell--right::after {
   content: "";
   position: absolute;
@@ -90,7 +91,6 @@
   background-image: url("../img/no.svg");
   background-repeat: no-repeat;
 }*/
-
 .prices__second-row .prices__white-cell {
   border-top: none;
 }
@@ -179,7 +179,9 @@
 @media (min-width: @tablet-width) {
   .prices {
     overflow: visible;
-    padding-top: 33px;
+    padding-top: 17px;
+    background-size: 100% 41px;
+    margin-top: 16px;
   }
 
   .prices__wrapper {
@@ -223,11 +225,9 @@
   }
 
   .prices__white-cell--right,
-  .prices__white-cell--wrong
-   {
+  .prices__white-cell--wrong {
     background-position: center;
   }
-
   /*.prices__white-cell--right::after {
     top: 12px;
     right: 60px;
@@ -237,27 +237,25 @@
     top: 10px;
     right: 61px;
   }*/
-
   .prices__toggles {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .prices {
+    overflow: hidden;
+    padding-top: 68px;
+    background-size: 100% 80px;
+    margin-top: 25px;
+  }
+
   .prices__wrapper {
     padding-bottom: 111px;
   }
 
   .prices__table {
     width: 940px;
-  }
-
-  .prices {
-    background-image: url("../img/background-desktop-table.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 93px;
-    overflow: hidden;
   }
 
   .prices__white-cell {

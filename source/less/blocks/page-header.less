@@ -5,6 +5,12 @@
   color: @color-white;
 }
 
+.page-header__additional_wrapper {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .page-header__logo {
   display: block;
   padding-top: 23px;
@@ -23,9 +29,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__wrapper {
+  .page-header__additional_wrapper {
     width: 660px;
-    margin: 0 auto;
   }
 }
 
@@ -35,6 +40,7 @@
     flex-direction: row;
     justify-content: space-around;
     max-width: 960px;
+    margin: 0 auto;
   }
 
   .page-header {
