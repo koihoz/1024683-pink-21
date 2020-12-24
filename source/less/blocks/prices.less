@@ -52,7 +52,6 @@
 }
 
 .prices__white-cell {
-  position: relative;
   width: 280px;
   background: @color-white;
   border: 2px solid @color-border-grey;
@@ -70,27 +69,7 @@
   background-repeat: no-repeat;
   background-position: 232px 16px;
 }
-/*.prices__white-cell--right::after {
-  content: "";
-  position: absolute;
-  width: 31px;
-  height: 21px;
-  top: 19px;
-  right: 17px;
-  background-image: url("../img/yes.svg");
-  background-repeat: no-repeat;
-}
 
-.prices__white-cell--wrong::after {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  top: 16px;
-  right: 19px;
-  background-image: url("../img/no.svg");
-  background-repeat: no-repeat;
-}*/
 .prices__second-row .prices__white-cell {
   border-top: none;
 }
@@ -123,26 +102,6 @@
   color: @color-white;
   margin: 0;
   padding-bottom: 30px;
-}
-
-.prices__row:first-of-type th {
-  border-radius: 10px 0 0 0;
-}
-
-.prices__row:nth-child(3) th {
-  border-radius: 0 0 0 10px;
-}
-
-.prices__row:nth-child(3) td:nth-child(4) {
-  border-radius: 0 0 10px 0;
-}
-
-.prices__row .prices__black-cell:nth-child(2) {
-  border-radius: 10px 0 0 0;
-}
-
-.prices__row .prices__black-cell:nth-child(4) {
-  border-radius: 0 10px 0 0;
 }
 
 .prices__toggles {
@@ -202,16 +161,90 @@
   .prices__white-cell {
     width: 153px;
     padding-left: 16px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+  }
+
+  .prices__row:first-of-type p {
+    margin: 0;
+  }
+
+  .prices__row:first-of-type th {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .prices__row:first-of-type th .prices__circle-border {
+    background-color: @color-white;
+    border-top: 2px solid @color-border-grey;
+    border-left: 2px solid @color-border-grey;
+    border-radius: 1px 0 0 0;
+    margin-top: -2px;
+    margin-left: -1px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+  }
+
+  .prices__row:nth-child(3) th {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .prices__row:nth-child(3) th .prices__circle-border {
+    background-color: @color-white;
+    border-bottom: 2px solid @color-border-grey;
+    border-left: 2px solid @color-border-grey;
+    border-radius: 0 0 0 1px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+  }
+
+  .prices__row:nth-child(3) td:nth-child(4) {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .prices__row:nth-child(3) td:nth-child(4) .prices__circle-border {
+    background-color: @color-white;
+    border-bottom: 2px solid @color-border-grey;
+    border-right: 2px solid @color-border-grey;
+    border-radius: 0 0 1px 0;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    padding-top: 20px;
+    padding-bottom: 26px;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    background-position: 60px 13px;
+  }
+
+  .prices__row .prices__black-cell:nth-child(2) {
+    border-radius: 10px 0 0 0;
+  }
+
+  .prices__row .prices__black-cell:nth-child(4) {
+    border-radius: 0 10px 0 0;
   }
 
   .prices__white-cell p {
     text-transform: capitalize;
-    margin-top: 7px;
-    margin-bottom: 6px;
+    margin-top: 3px;
+    margin-bottom: 0;
   }
 
   .prices__black-cell {
     width: 153px;
+  }
+
+  .prices__black-cell--last-column {
+    border-right: none;
   }
 
   .prices__first-column {
@@ -228,15 +261,7 @@
   .prices__white-cell--wrong {
     background-position: center;
   }
-  /*.prices__white-cell--right::after {
-    top: 12px;
-    right: 60px;
-  }
 
-  .prices__white-cell--wrong::after {
-    top: 10px;
-    right: 61px;
-  }*/
   .prices__toggles {
     display: none;
   }
@@ -250,8 +275,12 @@
     margin-top: 25px;
   }
 
+  .prices__row:first-of-type p {
+    margin-top: 2px;
+  }
+
   .prices__wrapper {
-    padding-bottom: 111px;
+    padding-bottom: 97px;
   }
 
   .prices__table {
@@ -265,8 +294,18 @@
   .prices__white-cell p {
     font-size: 18px;
     line-height: 30px;
-    margin-top: 13px;
-    margin-bottom: 14px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+
+  .prices__row:first-of-type th .prices__circle-border {
+    padding-top: 20px;
+  }
+
+  .prices__row:nth-child(3) td:nth-child(4) .prices__circle-border {
+    padding-top: 44px;
+    padding-bottom: 14px;
+    background-position: 101px 18px;
   }
 
   .prices__name {
