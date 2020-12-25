@@ -1,7 +1,26 @@
+.copyright {
+  margin-top: 52px;
+}
+
 .copyright__text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @midnight;
+  margin-right: 15px;
+}
+
+.copyright__img:hover {
+  fill: @midnight;
+}
+
+.copyright__img:active {
+  fill: fade(@midnight, 30%);
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin-top: 0;
+  }
 }

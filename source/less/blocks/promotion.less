@@ -15,24 +15,81 @@
 
 @media (min-width: @tablet-width) {
   .promotion {
-    padding-top: 158px;
-    padding-bottom: 192px;
+    padding-top: 95px;
+    padding-bottom: 89px;
+    position: relative;
+    background-color: @color-white;
   }
 
   .promotion__wrapper {
     width: 660px;
     margin: 0 auto;
-    padding: 0 20px 0 300px;
+    padding: 0 35px 0 330px;
+  }
+
+  .promotion__title {
+    color: @color-black;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .promotion__title::before {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    left: -310px;
+    top: -42px;
+    background-image: url("../img/clock-tablet.svg");
+  }
+
+  .promotion__text {
+    color: @midnight;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+  }
+
+  .promotion__link {
+    color: @red;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .promotion {
-    background-color: @background-color_pictures-list;
-  }
-
   .promotion__wrapper {
     width: 960px;
-    padding: 0 60px 0 440px;
+    padding: 0 60px 0 381px;
+  }
+
+  .promotion {
+    background-color: @background-color_pictures-list;
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+
+  .promotion__title::before {
+    width: 298px;
+    height: 345px;
+    left: -371px;
+    top: -93px;
+    background-image: url("../img/clock-desktop.svg");
+  }
+
+  .promotion__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 21px;
+    margin-bottom: 30px;
+  }
+
+  .promotion__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

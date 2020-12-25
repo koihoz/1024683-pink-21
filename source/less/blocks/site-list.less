@@ -14,23 +14,22 @@
 .site-list__item a {
   display: block;
   color: @color-white;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   text-decoration: none;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
 
   @media (min-width: @desktop-width) {
     text-transform: none;
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
+    border: none;
   }
-}
-
-.site-list__item {
-  background-color: @midnight;
 }
