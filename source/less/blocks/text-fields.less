@@ -3,6 +3,8 @@
   flex-direction: column;
   border: none;
   padding: 0;
+  margin-top: 32px;
+  margin-bottom: 25px;
 }
 
 .text-fields__label {
@@ -15,6 +17,10 @@
   color: @red;
 }
 
+.text-fields__label:last-child .text-field__input {
+  margin-bottom: 0;
+}
+
 .text-fields__legend {
   display: none;
 }
@@ -23,6 +29,13 @@
   .text-fields--border {
     border: 2px solid @color-border-grey;
     border-radius: 1px;
+    margin-bottom: 20px;
+  }
+
+  .text-fields--border .text-fields__label {
+    margin-top: 30px;
+    margin-right: 36px;
+    margin-left: 75px;
   }
 
   .text-fields__legend {
@@ -33,6 +46,10 @@
     font-size: 14px;
     line-height: 30px;
     color: @red;
+  }
+
+  .text-fields__label:last-child .text-field__input {
+    margin-bottom: 12px;
   }
 }
 

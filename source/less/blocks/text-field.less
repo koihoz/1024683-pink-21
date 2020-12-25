@@ -4,21 +4,24 @@
   font-size: 18px;
   line-height: 30px;
   color: @midnight;
-  margin-top: 17px;
-  margin-bottom: 29px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  padding: 14px 20px 13px;
 }
 
 @media (min-width: @tablet-width) {
   .text-field {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
   }
 
   .text-field__input {
     flex-grow: 1;
     margin-top: 0;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
     margin-left: 20px;
+    width: 100%;
   }
 
   .text-fields--border .text-field {
@@ -26,15 +29,14 @@
     flex-direction: column;
   }
 
-  .text-fields--border .text-fields__label {
-    margin-left: 70px;
-    margin-right: 70px;
+  .text-fields--border .text-field:last-child {
+    margin-bottom: 26px;
   }
 
   .text-fields--border .text-field__input {
     order: -1;
-    margin-bottom: 0;
     margin-left: -20px;
     margin-right: -20px;
+    margin-bottom: 12px;
   }
 }

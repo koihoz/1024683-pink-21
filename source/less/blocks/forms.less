@@ -8,8 +8,8 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 55px;
-  margin-top: 54px;
+  margin-bottom: 35px;
+  margin-top: 44px;
   color: @midnight;
 }
 
@@ -25,15 +25,20 @@
 
 .forms__checkboxes-wrapper {
   background: @background-color_pictures-list;
+  margin-top: 25px;
+  padding-top: 39px;
 }
 
 .forms__checkboxes-label-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding-left: 47px;
 }
 
 .forms__apps-wrapper {
   background: @background-color_pictures-list;
+  padding-top: 39px;
 }
 
 @media (min-width: @tablet-width) {
@@ -44,12 +49,13 @@
 
   .forms__wrapper {
     width: 490px;
-    margin-bottom: 82px;
+    margin-bottom: 41px;
   }
 
   .forms__text {
     font-size: 18px;
     margin-bottom: 0;
+    margin-top: 91px;
   }
 
   .forms__request {
@@ -73,20 +79,26 @@
   .forms__text-fields-wrapper:nth-of-type(3) {
     order: 3;
     grid-area: contact-info;
-    margin-top: 65px;
+    margin-top: 20px;
   }
 
   .forms__checkboxes-wrapper {
     background: none;
     order: 4;
     grid-area: checkboxes;
-    margin-top: 65px;
+    margin-top: 0;
   }
 
   .forms__apps-wrapper {
     background: none;
     order: 2;
     grid-area: apps;
+    padding-top: 23px;
+  }
+
+  .forms__checkboxes-label-wrapper {
+    padding-left: 103px;
+    padding-top: 6px;
   }
 }
 
