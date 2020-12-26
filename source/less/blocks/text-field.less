@@ -17,7 +17,6 @@
   }
 
   .text-field__input {
-    flex-grow: 1;
     margin-top: 0;
     margin-bottom: 54px;
     margin-left: 20px;
@@ -38,5 +37,15 @@
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-fields--border .text-field {
+    flex: auto;
+  }
+
+  .text-fields--border .text-field:last-child {
+    margin-bottom: 10px;
   }
 }
