@@ -69,6 +69,7 @@
 @media (min-width: @desktop-width) {
   .checkboxes {
     width: 936px;
+    padding-bottom: 8px;
   }
 
   .checkboxes__label:nth-of-type(1) {
@@ -93,5 +94,13 @@
 
   .checkboxes__label:nth-of-type(6) {
     order: 6;
+  }
+
+  .checkboxes__label::before {
+    left: 43px;
+  }
+
+  .checkboxes__input:checked + .checkboxes__span::after {
+    left: 51px;
   }
 }
