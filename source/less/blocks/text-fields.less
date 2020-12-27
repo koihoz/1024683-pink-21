@@ -50,6 +50,24 @@
     font-size: 14px;
     line-height: 30px;
     color: @red;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-fields--border .text-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-fields--border .text-field:last-child {
+    margin-bottom: 26px;
+  }
+
+  .text-fields--border .text-field__input {
+    order: -1;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 12px;
   }
 
   .text-fields__label:last-child .text-field__input {
@@ -62,5 +80,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .text-fields--border .text-field {
+    flex: auto;
+  }
+
+  .text-fields--border .text-field:last-child {
+    margin-bottom: 10px;
   }
 }

@@ -41,6 +41,12 @@
   padding-top: 39px;
 }
 
+.forms__apps-label-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 @media (min-width: @tablet-width) {
   .forms__form {
     display: flex;
@@ -126,16 +132,17 @@
   }
 
   .forms__text-fields-wrapper:nth-of-type(1) {
-    width: 433px;
+    width: 456px;
     margin-top: 5px;
-    padding-left: 0;
+    padding-left: 8px;
     padding-right: 10px;
   }
 
   .forms__text-fields-wrapper:nth-of-type(3) {
-    width: 932px;
+    width: 952px;
     padding: 0;
     margin-top: -15px;
+    padding-left: 8px;
   }
 
   .forms__checkboxes-wrapper {
@@ -146,5 +153,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 0;
+  }
+
+  .forms__text-fields-wrapper {
+    margin: 0;
+  }
+
+  .forms__apps-wrapper {
+    padding-left: 48px;
   }
 }

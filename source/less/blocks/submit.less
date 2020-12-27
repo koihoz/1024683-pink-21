@@ -28,8 +28,12 @@
   color: @midnight;
 }
 
-.submit__required-field span {
+.submit__required-field--star {
   color: @red;
+}
+
+.submit__required-field--addition {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,6 +60,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  padding-left: 132px;
-  padding-right: 129px;
+  .submit {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .submit__required-field--addition {
+    display: inline;
+  }
 }
