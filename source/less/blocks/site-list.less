@@ -23,7 +23,7 @@
   text-decoration: none;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid @color-black;
 
   @media (min-width: @desktop-width) {
     text-transform: none;
@@ -31,5 +31,28 @@
     font-size: 18px;
     line-height: 18px;
     border: none;
+  }
+}
+
+.site-list__item a:hover {
+  color: @red;
+}
+
+.site-list__item a:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item a:active {
+    color: @color-white;
+    opacity: 0.3;
+  }
+
+  .site-list__item a:focus {
+    border-bottom: 2px solid @color-white;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid @color-white;
   }
 }
