@@ -43,6 +43,14 @@
   top: -3px;
 }
 
+.checkboxes__label:hover::before {
+  border-color: @midnight;
+}
+
+.checkboxes__label:active::before {
+  border-color: @red;
+}
+
 .checkboxes__input:checked + .checkboxes__span::after {
   content: url("../img/tick.svg");
   position: absolute;
