@@ -18,6 +18,10 @@
   border-color: @red;
 }
 
+.text-field:last-child .text-field__input {
+  margin-bottom: 0;
+}
+
 @media (min-width: @tablet-width) {
   .text-field {
     display: flex;
@@ -30,5 +34,9 @@
     margin-bottom: 54px;
     margin-left: 20px;
     width: 100%;
+  }
+
+  .text-field:last-child .text-field__input {
+    margin-bottom: 12px;
   }
 }
