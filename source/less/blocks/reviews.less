@@ -71,6 +71,15 @@
   border: 3px solid @midnight;
   opacity: 0.3;
   border-radius: 6px;
+  outline: none;
+}
+
+.reviews__toggle--not-current:hover {
+  opacity: 0.6;
+}
+
+.reviews__toggle--not-current:active {
+  opacity: 0.1;
 }
 
 .reviews__toggle:nth-of-type(2) {
@@ -129,9 +138,9 @@
   .reviews__left-toggle,
   .reviews__right-toggle {
     display: block;
-    position: relative;
     border: none;
     margin-bottom: 40px;
+    position: relative;
     background-color: @color-white;
   }
 
@@ -144,6 +153,7 @@
     right: -13px;
     background-image: url("../img/right-arrow.svg");
     background-repeat: no-repeat;
+    opacity: 0.3;
   }
 
   .reviews__left-toggle::before {
@@ -155,6 +165,17 @@
     right: 4px;
     background-image: url("../img/left-arrow.svg");
     background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+
+  .reviews__left-toggle:hover::before,
+  .reviews__right-toggle:hover::after {
+    opacity: 0.6;
+  }
+
+  .reviews__left-toggle:active::before,
+  .reviews__right-toggle:active::after {
+    opacity: 0.1;
   }
 
   .reviews__texts {

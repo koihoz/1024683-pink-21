@@ -3,6 +3,12 @@
   flex-direction: column;
   border: none;
   padding: 0;
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
+
+.text-fields--border {
+  margin-bottom: 42px;
 }
 
 .text-fields__label {
@@ -23,6 +29,26 @@
   .text-fields--border {
     border: 2px solid @color-border-grey;
     border-radius: 1px;
+    margin-bottom: 20px;
+  }
+
+  .text-fields--border .text-fields__label {
+    margin-top: 30px;
+    margin-right: 36px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-fields--border .text-fields__label:last-child {
+    margin-bottom: 26px;
+  }
+
+  .text-fields--border .text-fields__input {
+    order: -1;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 12px;
   }
 
   .text-fields__legend {
@@ -33,6 +59,8 @@
     font-size: 14px;
     line-height: 30px;
     color: @red;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -41,5 +69,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .text-fields--border .text-fields__label {
+    flex: auto;
+  }
+
+  .text-fields--border .text-fields__label:last-child {
+    margin-bottom: 10px;
   }
 }

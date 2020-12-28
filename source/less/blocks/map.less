@@ -1,6 +1,10 @@
 .map-wrapper {
   position: relative;
   margin-top: -76px;
+  background-image: url("../img/map-mobile.png");
+  background-position: center;
+  background-size: 100%;
+  min-height: 290px;
 }
 
 .map-wrapper__map {
@@ -19,17 +23,23 @@
 }
 
 @media (min-width: @tablet-width) {
-  .map-wrapper__map {
-    height: 429px;
-  }
-
   .map-wrapper {
     position: relative;
     margin-top: -38px;
+    background-size: 100%;
+    min-height: 429px;
+  }
+
+  .map-wrapper__map {
+    height: 429px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .map-wrapper {
+    min-height: 520px;
+  }
+
   .map-wrapper__map {
     height: 520px;
   }

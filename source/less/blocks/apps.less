@@ -1,20 +1,12 @@
 .apps {
   width: 320px;
   margin: 0 auto;
-  padding-top: 42px;
-  padding-bottom: 54px;
+  padding-top: 39px;
+  padding-bottom: 1px;
   text-align: center;
   display: flex;
   flex-direction: column;
   border: none;
-}
-
-.apps__label {
-  color: @midnight;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
 }
 
 .apps__legend {
@@ -25,15 +17,81 @@
   color: @red;
 }
 
+.apps__label {
+  color: @midnight;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 78px;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.apps__label::before {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background-color: @color-white;
+  border: 2px solid @color-border-grey;
+  border-radius: 33px;
+  left: -70px;
+  top: -5px;
+}
+
+.apps__label:hover::before {
+  border-color: @midnight;
+}
+
+.apps__label:active::before {
+  border-color: @red;
+}
+
+.apps__span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.apps__input:checked + .apps__span::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: @red;
+  border-radius: 7px;
+  left: -57px;
+  top: 8px;
+}
+
 @media (min-width: @tablet-width) {
   .apps {
     width: 616px;
     border: 2px solid @color-border-grey;
+    padding-top: 48px;
+    padding-left: 39px;
+    padding-bottom: 13px;
+  }
+
+  .apps__legend {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .apps__label::before {
+    left: -62px;
+  }
+
+  .apps__input:checked + .apps__span::after {
+    left: -48px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .apps {
-    width: 431px;
+    width: 435px;
+    padding-left: 65px;
+    margin: 0;
   }
 }
