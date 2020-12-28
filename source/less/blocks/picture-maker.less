@@ -1,3 +1,7 @@
+.picture_maker {
+  padding-top: 43px;
+}
+
 .picture-maker__name {
   font-weight: 400;
   font-size: 14px;
@@ -10,7 +14,11 @@
 .picture-maker__tool {
   background-color: @background-color_pictures-list;
   max-width: 940px;
-  margin: 0 auto;
+  margin: 85px auto 0;
+}
+
+.picture-maker__wrapper {
+  padding-top: 20px;
 }
 
 .picture-maker__picture {
@@ -25,6 +33,30 @@
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 43px;
+}
+
+.picture-maker__toggle--active {
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/crop.svg");
+  border: none;
+  background-color: @background-color_pictures-list;
+}
+
+.picture-maker__toggle:nth-of-type(2) {
+  width: 48px;
+  height: 43px;
+  background-image: url("../img/fill.svg");
+  border: none;
+  background-color: @background-color_pictures-list;
+}
+
+.picture-maker__toggle:nth-of-type(3) {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/contrast.svg");
+  border: none;
+  background-color: @background-color_pictures-list;
 }
 
 .picture-maker__slider {
@@ -59,7 +91,7 @@
 .picture-maker__buttons {
   display: flex;
   flex-direction: column;
-  margin-top: 38px;
+  margin-top: 39px;
 }
 
 .picture-maker__button {
@@ -70,13 +102,15 @@
   border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 15px;
 }
 
 .picture-maker__button-submit {
   color: @color-button;
   border: 3px solid @color-button;
   margin-bottom: 12px;
-  margin-top: 38px;
+  margin-top: 0;
 }
 
 .picture-maker__button-cancel {
