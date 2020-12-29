@@ -64,7 +64,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 0 10px;
+  margin: 0 0 11px;
 }
 
 .pictures__heart {
@@ -189,6 +189,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .pictures {
+    margin-bottom: 57px;
+  }
+
   .pictures__wrapper {
     width: 572px;
   }
@@ -199,8 +203,8 @@
 
   .pictures__slogan {
     font-size: 18px;
-    margin-bottom: 97px;
-    margin-top: 100px;
+    margin-bottom: 89px;
+    margin-top: 91px;
     padding: 0;
   }
 
@@ -208,16 +212,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    row-gap: 54px;
   }
 
   .pictures__item:first-child {
     grid-column-start: 1;
     grid-column-end: 4;
+    margin-bottom: -6px;
   }
 
   .pictures__main-image {
     width: 960px;
-    height: 509px;
+    height: 506px;
     margin-left: -10px;
+  }
+
+  .pictures__author-image {
+    width: 300px;
+    height: 400px;
   }
 }
