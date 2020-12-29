@@ -53,6 +53,8 @@
   background-image: url("../img/crop.svg");
   border: none;
   background-color: @background-color_pictures-list;
+  margin-left: 17px;
+  outline: none;
 }
 
 .picture-maker__toggle:nth-of-type(2) {
@@ -61,6 +63,8 @@
   background-image: url("../img/fill.svg");
   border: none;
   background-color: @background-color_pictures-list;
+  margin-left: 5px;
+  outline: none;
 }
 
 .picture-maker__toggle:nth-of-type(3) {
@@ -69,6 +73,7 @@
   background-image: url("../img/contrast.svg");
   border: none;
   background-color: @background-color_pictures-list;
+  outline: none;
 }
 
 .picture-maker__slider {
@@ -100,6 +105,10 @@
   border-radius: 10px;
 }
 
+.picture-maker__slider:focus::-webkit-slider-thumb {
+  background: @red;
+}
+
 .picture-maker__buttons {
   display: flex;
   flex-direction: column;
@@ -125,10 +134,29 @@
   margin-top: 0;
 }
 
+.picture-maker__button-submit:hover {
+  color: @color-white;
+  background-color: @red;
+}
+
+.picture-maker__button-submit:active {
+  color: fade(@color-white, 30%);
+}
+
 .picture-maker__button-cancel {
-  color: @midnight;
+  color: fade(@midnight, 10%);
   border: 3px solid fade(@midnight, 10%);
   margin-bottom: 41px;
+}
+
+.picture-maker__button-cancel:hover {
+  color: fade(@midnight, 30%);
+  border-color: fade(@midnight, 30%);
+}
+
+.picture-maker__button-cancel:active {
+  color: fade(@color-white, 30%);
+  background-color: fade(@midnight, 30%);
 }
 
 @media (min-width: @tablet-width) {
@@ -193,6 +221,8 @@
     height: 22px;
     background-size: 22px 22px;
     background-repeat: no-repeat;
+    margin-left: 29px;
+    margin-top: -7px;
   }
 
   .picture-maker__toggle:nth-of-type(2) {
@@ -200,6 +230,8 @@
     height: 22px;
     background-size: 24px 22px;
     background-repeat: no-repeat;
+    margin-left: 28px;
+    margin-top: -7px;
   }
 
   .picture-maker__toggle:nth-of-type(3) {
@@ -207,10 +239,12 @@
     height: 16px;
     background-size: 16px 16px;
     background-repeat: no-repeat;
+    margin-left: 32px;
+    margin-top: -7px;
   }
 
   .picture-maker__buttons {
-    margin-top: 87px;
+    margin-top: 94px;
     margin-bottom: 14px;
     margin-left: 15px;
   }
@@ -247,25 +281,31 @@
     width: 44px;
     height: 44px;
     background-size: 44px 44px;
+    margin-left: 10px;
+    margin-top: -19px;
   }
 
   .picture-maker__toggle:nth-of-type(2) {
     width: 48px;
     height: 43px;
     background-size: 48px 43px;
+    margin-left: 10px;
+    margin-top: -19px;
   }
 
   .picture-maker__toggle:nth-of-type(3) {
     width: 32px;
     height: 32px;
     background-size: 32px 32px;
+    margin-left: 15px;
+    margin-top: -19px;
   }
 
   .picture-maker__buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 149px;
+    margin-top: 169px;
     margin-bottom: 57px;
   }
 
