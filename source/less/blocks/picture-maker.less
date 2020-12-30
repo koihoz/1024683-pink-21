@@ -47,33 +47,28 @@
   margin-top: 43px;
 }
 
-.picture-maker__toggle--active {
-  width: 44px;
-  height: 44px;
-  background-image: url("../img/crop.svg");
+.picture-maker__toggle {
+  outline: none;
   border: none;
   background-color: @background-color_pictures-list;
-  margin-left: 17px;
-  outline: none;
 }
 
-.picture-maker__toggle:nth-of-type(2) {
-  width: 48px;
-  height: 43px;
-  background-image: url("../img/fill.svg");
-  border: none;
-  background-color: @background-color_pictures-list;
-  margin-left: 5px;
-  outline: none;
+.picture-maker__toggle:nth-of-type(1) {
+  margin-left: 10px;
 }
 
-.picture-maker__toggle:nth-of-type(3) {
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/contrast.svg");
-  border: none;
-  background-color: @background-color_pictures-list;
-  outline: none;
+.picture-maker__toggle svg {
+  fill: @midnight;
+  opacity: 0.3;
+}
+
+.picture-maker__toggle:hover svg {
+  opacity: 0.5;
+}
+
+.picture-maker__toggle--active svg {
+  fill: @red;
+  opacity: 1;
 }
 
 .picture-maker__slider {
@@ -216,31 +211,25 @@
     margin-bottom: 0;
   }
 
-  .picture-maker__toggle--active {
+  .picture-maker__toggle svg {
+    fill: @red;
+    opacity: 1;
+    margin-top: -7px;
+  }
+
+  .picture-maker__toggle:nth-of-type(1) svg {
     width: 22px;
     height: 22px;
-    background-size: 22px 22px;
-    background-repeat: no-repeat;
-    margin-left: 29px;
-    margin-top: -7px;
   }
 
-  .picture-maker__toggle:nth-of-type(2) {
+  .picture-maker__toggle:nth-of-type(2) svg {
     width: 24px;
     height: 22px;
-    background-size: 24px 22px;
-    background-repeat: no-repeat;
-    margin-left: 28px;
-    margin-top: -7px;
   }
 
-  .picture-maker__toggle:nth-of-type(3) {
+  .picture-maker__toggle:nth-of-type(3) svg {
     width: 16px;
     height: 16px;
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    margin-left: 32px;
-    margin-top: -7px;
   }
 
   .picture-maker__buttons {
@@ -277,27 +266,21 @@
     margin-right: 25px;
   }
 
-  .picture-maker__toggle--active {
+  .picture-maker__toggle:nth-of-type(1) svg {
     width: 44px;
     height: 44px;
-    background-size: 44px 44px;
-    margin-left: 10px;
     margin-top: -19px;
   }
 
-  .picture-maker__toggle:nth-of-type(2) {
+  .picture-maker__toggle:nth-of-type(2) svg {
     width: 48px;
     height: 43px;
-    background-size: 48px 43px;
-    margin-left: 10px;
     margin-top: -19px;
   }
 
-  .picture-maker__toggle:nth-of-type(3) {
+  .picture-maker__toggle:nth-of-type(3) svg {
     width: 32px;
     height: 32px;
-    background-size: 32px 32px;
-    margin-left: 15px;
     margin-top: -19px;
   }
 
