@@ -1,4 +1,4 @@
-.picture_maker {
+.picture-maker {
   padding-top: 43px;
 }
 
@@ -14,7 +14,7 @@
 .picture-maker__tool {
   background-color: @background-color_pictures-list;
   max-width: 940px;
-  margin: 85px auto 0;
+  margin: 42px auto 0;
   position: relative;
 }
 
@@ -44,7 +44,7 @@
   grid-gap: 30px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top: 43px;
+  margin-top: 40px;
 }
 
 .picture-maker__toggle {
@@ -155,11 +155,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .picture-maker {
+    padding-top: 0;
+  }
+
   .picture-maker__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 57px;
     width: 660px;
+    margin-top: 67px;
   }
 
   .picture-maker__name {
@@ -168,7 +173,7 @@
   }
 
   .picture-maker__tool {
-    margin-top: 70px;
+    margin-top: 24px;
   }
 
   .picture-maker__tool::after {
@@ -190,7 +195,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     margin: 0;
-    padding-top: 14px;
+    padding-top: 17px;
     padding-right: 16px;
   }
 
@@ -233,7 +238,7 @@
   }
 
   .picture-maker__buttons {
-    margin-top: 94px;
+    margin-top: 86px;
     margin-bottom: 14px;
     margin-left: 15px;
   }
@@ -248,9 +253,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .picture-maker {
+    padding-top: 43px;
+  }
+
   .picture-maker__wrapper {
     width: 940px;
     justify-content: space-around;
+    margin-top: 67px;
+    margin-bottom: 29px;
   }
 
   .picture-maker__picture {
