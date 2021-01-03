@@ -5,10 +5,11 @@
   color: @color-white;
 }
 
-.main-nav--closed .page-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  position: relative;
+.page-header--closed .page-header__wrapper-absolute {
+  position: absolute;
+  background-color: fade(@color-black, 30%);
   z-index: 10;
+  width: 100%;
 }
 
 .page-header__additional-wrapper {
@@ -34,9 +35,97 @@
   }
 }
 
+.page-header__toggle {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-color: @midnight;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 50px;
+  height: 3px;
+  background-color: @color-white;
+  border-radius: 1px;
+  box-shadow: 0 8px 0 0 @color-white, 0 16px 0 0 @color-white;
+  z-index: 1000;
+}
+
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header--closed .page-header__toggle:hover::before {
+  background-color: @red;
+  box-shadow: 0 8px 0 0 @red, 0 16px 0 0 @red;
+}
+
+.page-header--closed .page-header__toggle:active::before {
+  background-color: fade(@red, 30%);
+  box-shadow: 0 8px 0 0 fade(@red, 30%), 0 16px 0 0 fade(@red, 30%);
+}
+
+.page-header--opened .page-header__toggle {
+  top: 9px;
+  right: 0;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 23px;
+    width: 31px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: @color-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    background-color: @red;
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: fade(@red, 30%);
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-header__additional-wrapper {
     width: 660px;
+  }
+
+  .page-header--opened .page-header__toggle {
+    top: 29px;
+    right: 0;
+  }
+}
+
+@media (max-width: @mobile-and-tablet-width-only) {
+  .page-header--closed .site-list__item {
+    display: none;
   }
 }
 
@@ -58,5 +147,9 @@
   .page-header__logo {
     padding-top: 26px;
     padding-left: 10px;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 }
