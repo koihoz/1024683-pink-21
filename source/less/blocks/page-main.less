@@ -1,11 +1,31 @@
 .page-main__image {
-  background: url("../img/back-mobile.jpg");
-  background-size: cover;
+  background-image: url("../img/back-mobile-form.jpg");
   padding-top: 27px;
   min-height: 170px;
+  background-size: 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.jpg");
+    background-image: url("../img/back-mobile-form@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 329px;
+    padding-top: 66px;
+    background-image: url("../img/back-tablet-form.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet-form@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 394px;
+    padding-top: 169px;
+    background-image: url("../img/back-desktop-form.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-form@2x.jpg");
+    }
   }
 }
 
@@ -25,11 +45,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main__image {
-    min-height: 329px;
-    padding-top: 66px;
-  }
-
   .page-main__wrapper {
     width: 620px;
   }
@@ -43,11 +58,6 @@
 @media (min-width: @desktop-width) {
   .page-main {
     margin-top: -109px;
-  }
-
-  .page-main__image {
-    min-height: 394px;
-    padding-top: 169px;
   }
 
   .page-main__wrapper {
