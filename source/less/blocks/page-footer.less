@@ -6,14 +6,14 @@
   padding-bottom: 44px;
 }
 
-/*.page-footer__link:hover .page-footer__logo-pink {
-fill: #d22856;
-}*/
-
 .page-footer__copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.page-footer__image--desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,5 +36,13 @@ fill: #d22856;
 
   .page-footer__image {
     width: 147px;
+  }
+
+  .page-footer__image--tablet {
+    display: none;
+  }
+
+  .page-footer__image--desktop {
+    display: inline;
   }
 }

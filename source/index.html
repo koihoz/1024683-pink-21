@@ -278,24 +278,8 @@
   </main>
   <footer class="page-footer container">
     <a class="page-footer__link" href="index.html">
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/logo-footer-desktop.svg">
-        <img class="page-footer__image" src="img/logo-footer-mobile-tablet.svg" width="145" height="40" alt="Пинк»">
-        <!--
-        здесь я пытался реализовать изменение цвета надписи ПИНК при наведении.
-          идея была следующая:
-          1 внести стили с ноver внутрь свг
-          2 свг вырезать из html
-          3 свг добавить в html через img
-
-          но ховер не заработал.
-           а если свг код заинлайнить в html, то hover работает
-
-           нужно какой-то стиль прописать в css ? не пойму пока..
-
-           https://up.htmlacademy.ru/adaptive/21/demos/4695#17  вот тут интересно задали стиль.
-         -->
-      </picture>
+        <object class="page-footer__image page-footer__image--tablet" type="image/svg+xml" data="img/logo-footer-mobile-tablet.svg"></object>
+        <object class="page-footer__image page-footer__image--desktop" type="image/svg+xml" data="img/logo-footer-desktop.svg"></object>
     </a>
     <ul class="social">
       <li class="social__item">
