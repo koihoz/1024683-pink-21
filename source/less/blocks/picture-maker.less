@@ -90,6 +90,16 @@
   grid-column-end: 4;
 }
 
+.picture-maker__slider::-moz-range-thumb {
+  appearance: none;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  background: @color-white;
+  border: 2px solid @red;
+  border-radius: 10px;
+}
+
 .picture-maker__slider::-webkit-slider-thumb {
   appearance: none;
   cursor: pointer;
@@ -98,6 +108,10 @@
   background: @color-white;
   border: 2px solid @red;
   border-radius: 10px;
+}
+
+.picture-maker__slider:focus::-moz-range-thumb {
+  background: @red;
 }
 
 .picture-maker__slider:focus::-webkit-slider-thumb {
