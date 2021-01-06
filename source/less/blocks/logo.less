@@ -1,8 +1,27 @@
+.logo__image--tablet {
+  display: none;
+}
+
+.logo__image--desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .logo__image {
-    display: block;
     width: 145px;
     height: 40px;
+  }
+
+  .logo__image--tablet {
+    display: inline;
+  }
+
+  .logo__image--mobile {
+    display: none;
+  }
+
+  .logo__image--desktop {
+    display: none;
   }
 }
 
@@ -10,5 +29,17 @@
   .logo__image {
     width: 147px;
     height: 40px;
+  }
+
+  .logo__image--desktop {
+    display: inline;
+  }
+
+  .logo__image--mobile {
+    display: none;
+  }
+
+  .logo__image--tablet {
+    display: none;
   }
 }

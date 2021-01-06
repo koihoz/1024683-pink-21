@@ -1,0 +1,20 @@
+1.
+<picture>
+  <source media="(min-width: 960px)" srcset="img/logo-desktop.svg">
+  <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
+  <img class="logo__image" src="img/logo-mobile.svg" width="74" height="23" alt="Пинк»">
+</picture>
+
+
+
+
+2.
+<object class="page-footer__image page-footer__image--tablet" type="image/svg+xml" data="img/logo-footer-mobile-tablet.svg"></object>
+<object class="page-footer__image page-footer__image--desktop" type="image/svg+xml" data="img/logo-footer-desktop.svg"></object>
+
+.page-footer__image--tablet {
+  display: none;
+}
+.page-footer__image--desktop {
+  display: inline;
+}

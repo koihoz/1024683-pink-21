@@ -6,6 +6,8 @@
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link type="image/png" sizes="16x16" rel="icon" href="img/favicon-16x16.png">
+  <link type="image/png" sizes="32x32" rel="icon" href="img/favicon-32x32.png">
 </head>
 
 <body class="page__body">
@@ -15,11 +17,11 @@
         <div class="page-header__additional-wrapper">
 
           <a class="page-header__logo logo">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
-              <img class="logo__image" src="img/logo-mobile.svg" width="74" height="23" alt="Пинк»">
-            </picture>
+
+            <img class="logo__image logo__image--mobile" src="img/logo-mobile.svg" width="74" height="23" alt="Пинк»">
+            <img class="logo__image logo__image--tablet" src="img/logo-tablet.svg" width="145" height="40" alt="Пинк»">
+            <img class="logo__image logo__image--desktop" src="img/logo-desktop.svg" width="147" height="40" alt="Пинк»">
+
           </a>
           <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -151,8 +153,10 @@
 
   <footer class="page-footer container">
     <a class="page-footer__link" href="index.html">
-        <object class="page-footer__image page-footer__image--tablet" type="image/svg+xml" data="img/logo-footer-mobile-tablet.svg"></object>
-        <object class="page-footer__image page-footer__image--desktop" type="image/svg+xml" data="img/logo-footer-desktop.svg"></object>
+
+      <img class="page-footer__image page-footer__image--tablet"  src="img/logo-footer-mobile-tablet.svg" width="74" height="23" alt="Пинк">
+      <img class="page-footer__image page-footer__image--desktop" src="img/logo-footer-desktop.svg" width="145" height="40" alt="Пинк">
+
     </a>
     <ul class="social">
       <li class="social__item">

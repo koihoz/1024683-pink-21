@@ -15,13 +15,12 @@
     <div class="page-header__wrapper-absolute">
       <div class="page-header__wrapper">
         <div class="page-header__additional-wrapper">
-
           <a class="page-header__logo logo">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
-              <img class="logo__image" src="img/logo-mobile.svg" width="74" height="23" alt="Пинк»">
-            </picture>
+
+              <img class="logo__image logo__image--mobile" src="img/logo-mobile.svg" width="74" height="23" alt="Пинк»">
+              <img class="logo__image logo__image--tablet" src="img/logo-tablet.svg" width="145" height="40" alt="Пинк»">
+              <img class="logo__image logo__image--desktop" src="img/logo-desktop.svg" width="147" height="40" alt="Пинк»">
+
           </a>
           <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -273,13 +272,15 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.965998559191!2d30.320044615957222!3d59.932706369539424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963104349069f3%3A0x3c4f4cc84a20de7f!2z0JrQsNC30LDQvdGB0LrQsNGPINGD0LsuLCA4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1597921019375!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
       </iframe>
-      <img class="map-wrapper__photo-map" src="img/map-mobile.png" width="320" height="200" alt="карта»">
+      <img class="map-wrapper__photo-map" src="img/map-mobile.png" width="320" height="200" alt="карта">
     </div>
   </main>
   <footer class="page-footer container">
     <a class="page-footer__link" href="index.html">
-        <object class="page-footer__image page-footer__image--tablet" type="image/svg+xml" data="img/logo-footer-mobile-tablet.svg"></object>
-        <object class="page-footer__image page-footer__image--desktop" type="image/svg+xml" data="img/logo-footer-desktop.svg"></object>
+
+        <img class="page-footer__image page-footer__image--tablet"  src="img/logo-footer-mobile-tablet.svg" width="74" height="23" alt="Пинк">
+        <img class="page-footer__image page-footer__image--desktop" src="img/logo-footer-desktop.svg" width="145" height="40" alt="Пинк">
+
     </a>
     <ul class="social">
       <li class="social__item">
