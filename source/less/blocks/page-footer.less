@@ -12,8 +12,16 @@
   justify-content: center;
 }
 
-.page-footer__image--desktop {
+.page-footer__img--desktop {
   display: none;
+}
+
+.page-footer__link:hover .page-footer__img {
+  fill: @red;
+}
+
+.page-footer__link:active .page-footer__img {
+  opacity: 30%;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,11 +46,11 @@
     width: 147px;
   }
 
-  .page-footer__image--tablet {
+  .page-footer__img--tablet {
     display: none;
   }
 
-  .page-footer__image--desktop {
-    display: block;
+  .page-footer__img--desktop {
+    display: inline;
   }
 }
