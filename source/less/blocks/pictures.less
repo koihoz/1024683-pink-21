@@ -41,6 +41,25 @@
 
 .pictures__author-info {
   padding: 13px 10px 18px 17px;
+  position: relative;
+}
+
+.pictures__author-info--big-photo::before {
+  content: "ПАНОРАМА ДНЯ";
+  position: absolute;
+  width: 140px;
+  height: 36px;
+  top: -142px;
+  right: 0;
+  background-color: @red;
+  color: @color-white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pictures__author-name {
@@ -125,6 +144,11 @@
     padding: 18px 30px 15px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .pictures__author-info--big-photo::before {
+    top: -457px;
+    right: 0;
   }
 
   .pictures__author-info--small-photo {

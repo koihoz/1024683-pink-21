@@ -38,6 +38,27 @@
     margin-left: 75px;
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .text-fields--border .text-fields__label:last-child::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    top: 0;
+    right: 22px;
+    background-image: url("../img/mail-form.svg");
+  }
+
+  .text-fields--border .text-fields__label:first-of-type::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    top: 0;
+    right: 22px;
+    background-image: url("../img/phone-form.svg");
   }
 
   .text-fields--border .text-fields__label:last-child {
