@@ -1,5 +1,53 @@
-.logo__image {
-  display: block;
-  width: 74px;
-  height: 23px;
+.logo__img {
+  fill: @color-white;
+}
+
+.logo:hover .logo__img {
+  fill: @red;
+}
+
+.logo:active .logo__img {
+  fill: @color-white;
+  opacity: 30%;
+}
+
+.logo__img-tablet {
+  display: none;
+}
+
+.logo__img-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__img-tablet {
+    display: inline;
+  }
+
+  .logo__img-mobile {
+    display: none;
+  }
+
+  .logo__img-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .logo__img-desktop {
+    display: inline;
+  }
+
+  .logo__img-mobile {
+    display: none;
+  }
+
+  .logo__img-tablet {
+    display: none;
+  }
 }

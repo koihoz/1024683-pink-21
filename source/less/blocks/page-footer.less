@@ -12,12 +12,24 @@
   justify-content: center;
 }
 
+.page-footer__img-desktop {
+  display: none;
+}
+
+.page-footer__link:hover .page-footer__img {
+  fill: @red;
+}
+
+.page-footer__link:active .page-footer__img {
+  opacity: 30%;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 71px;
+    padding-top: 22px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -28,5 +40,13 @@
     padding-top: 53px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .page-footer__img-tablet {
+    display: none;
+  }
+
+  .page-footer__img-desktop {
+    display: inline;
   }
 }

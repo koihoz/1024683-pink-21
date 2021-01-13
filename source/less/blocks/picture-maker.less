@@ -1,3 +1,7 @@
+.picture-maker {
+  padding-top: 43px;
+}
+
 .picture-maker__name {
   font-weight: 400;
   font-size: 14px;
@@ -10,7 +14,24 @@
 .picture-maker__tool {
   background-color: @background-color_pictures-list;
   max-width: 940px;
-  margin: 0 auto;
+  margin: 42px auto 0;
+  position: relative;
+}
+
+.picture-maker__tool::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: fade(@midnight, 10%);
+  bottom: 202px;
+}
+
+.picture-maker__wrapper {
+  padding-top: 20px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .picture-maker__picture {
@@ -18,13 +39,45 @@
 }
 
 .picture-maker__slidecontainer {
-  border-bottom: 1px solid fade(@midnight, 10%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-column-gap: 30px;
+  grid-row-gap: 34px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top: 43px;
+  margin-top: 36px;
+}
+
+.picture-maker__toggle {
+  outline: none;
+  border: none;
+  background-color: @background-color_pictures-list;
+}
+
+.picture-maker__toggle:nth-of-type(1) {
+  margin-left: 10px;
+}
+
+.picture-maker__toggle:nth-of-type(2) {
+  margin-left: -10px;
+}
+
+.picture-maker__toggle:nth-of-type(3) {
+  margin-right: 20px;
+}
+
+.picture-maker__toggle svg {
+  fill: @midnight;
+  opacity: 0.3;
+}
+
+.picture-maker__toggle:hover svg {
+  opacity: 0.5;
+}
+
+.picture-maker__toggle--active svg {
+  fill: @red;
+  opacity: 1;
 }
 
 .picture-maker__slider {
@@ -46,6 +99,16 @@
   grid-column-end: 4;
 }
 
+.picture-maker__slider::-moz-range-thumb {
+  appearance: none;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  background: @color-white;
+  border: 2px solid @red;
+  border-radius: 10px;
+}
+
 .picture-maker__slider::-webkit-slider-thumb {
   appearance: none;
   cursor: pointer;
@@ -56,10 +119,18 @@
   border-radius: 10px;
 }
 
+.picture-maker__slider:focus::-moz-range-thumb {
+  background: @red;
+}
+
+.picture-maker__slider:focus::-webkit-slider-thumb {
+  background: @red;
+}
+
 .picture-maker__buttons {
   display: flex;
   flex-direction: column;
-  margin-top: 38px;
+  margin-top: 39px;
 }
 
 .picture-maker__button {
@@ -70,55 +141,230 @@
   border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 15px;
 }
 
 .picture-maker__button-submit {
   color: @color-button;
   border: 3px solid @color-button;
   margin-bottom: 12px;
-  margin-top: 38px;
+  margin-top: 0;
+}
+
+.picture-maker__button-submit:hover {
+  color: @color-white;
+  background-color: @red;
+}
+
+.picture-maker__button-submit:active {
+  color: fade(@color-white, 30%);
 }
 
 .picture-maker__button-cancel {
-  color: @midnight;
+  color: fade(@midnight, 10%);
   border: 3px solid fade(@midnight, 10%);
   margin-bottom: 41px;
 }
 
+.picture-maker__button-cancel:hover {
+  color: fade(@midnight, 30%);
+  border-color: fade(@midnight, 30%);
+}
+
+.picture-maker__button-cancel:active {
+  color: fade(@color-white, 30%);
+  background-color: fade(@midnight, 30%);
+}
+
 @media (min-width: @tablet-width) {
+  .picture-maker {
+    padding-top: 0;
+  }
+
   .picture-maker__wrapper {
     display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+    width: 660px;
+    margin-top: 67px;
+  }
+
+  .picture-maker__name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .picture-maker__tool {
+    margin-top: 24px;
+  }
+
+  .picture-maker__tool::after {
+    display: none;
   }
 
   .picture-maker__picture {
-    margin-top: 57px;
-    margin-bottom: 54px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .picture-maker__filter {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .picture-maker__toggle:nth-of-type(1) {
+    margin-left: 0;
+    margin-bottom: 23px;
+  }
+
+  .picture-maker__toggle:nth-of-type(2) {
+    margin-left: 0;
+    margin-bottom: 23px;
+  }
+
+  .picture-maker__toggle:nth-of-type(3) {
+    margin-right: 0;
+    margin-top: -5px;
   }
 
   .picture-maker__slidecontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    grid-column-gap: 1px;
+    grid-row-gap: 30px;
+    margin: 0;
+    padding-top: 17px;
+    padding-right: 16px;
+    margin-top: 0;
+  }
+
+  .picture-maker__slider {
+    width: 202px;
   }
 
   .picture-maker__slider:nth-of-type(1),
   .picture-maker__slider:nth-of-type(2) {
     display: block;
+    margin-bottom: 39px;
   }
 
   .picture-maker__slider:nth-of-type(3) {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-top: -1px;
+    margin-bottom: 0;
+  }
+
+  .picture-maker__toggle svg {
+    fill: @red;
+    opacity: 1;
+    margin-top: -7px;
+  }
+
+  .picture-maker__toggle:nth-of-type(1) svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .picture-maker__toggle:nth-of-type(2) svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .picture-maker__toggle:nth-of-type(3) svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .picture-maker__buttons {
+    margin-top: 91px;
+    margin-bottom: 14px;
+    margin-left: 13px;
+  }
+
+  .picture-maker__button {
+    width: 260px;
+  }
+
+  .picture-maker__button-submit {
+    margin-bottom: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .picture-maker {
+    padding-top: 43px;
+  }
+
+  .picture-maker__wrapper {
+    width: 940px;
+    justify-content: space-around;
+    margin-top: 67px;
+    margin-bottom: 29px;
+  }
+
+  .picture-maker__picture {
+    margin-left: 35px;
+  }
+
+  .picture-maker__slider {
+    width: 288px;
+  }
+
+  .picture-maker__filter {
+    width: 410px;
+    margin-right: 16px;
+  }
+
+  .picture-maker__slidecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    padding-right: 28px;
+  }
+
+  .picture-maker__toggle:nth-of-type(1) {
+    margin-left: -15px;
+    margin-bottom: 23px;
+  }
+
+  .picture-maker__toggle:nth-of-type(2) {
+    margin-left: -12px;
+    margin-bottom: 25px;
+  }
+
+  .picture-maker__toggle:nth-of-type(3) {
+    margin-left: -15px;
+    margin-top: 0;
+  }
+
+  .picture-maker__toggle:nth-of-type(1) svg {
+    width: 44px;
+    height: 44px;
+    margin-top: -19px;
+  }
+
+  .picture-maker__toggle:nth-of-type(2) svg {
+    width: 48px;
+    height: 43px;
+    margin-top: -19px;
+  }
+
+  .picture-maker__toggle:nth-of-type(3) svg {
+    width: 32px;
+    height: 32px;
+    margin-top: -19px;
+  }
+
   .picture-maker__buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 45px;
-    margin-top: 180px;
+    justify-content: space-between;
+    margin-top: 162px;
+    margin-bottom: 57px;
+    margin-left: 0;
   }
 
   .picture-maker__button {
