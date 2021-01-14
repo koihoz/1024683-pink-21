@@ -1,7 +1,5 @@
-/* Хватит этой "пустоты".
-Cогласно техзаданию пункт 3.5, я выбираю  реализация без JS */
 
-/*  var navMain = document.querySelector('.page-header');
+  var navMain = document.querySelector('.page-header');
   var navToggle = document.querySelector('.page-header__toggle');
 
   navMain.classList.remove('page-header--nojs');
@@ -14,4 +12,4 @@ Cогласно техзаданию пункт 3.5, я выбираю  реал
       navMain.classList.add('page-header--closed');
       navMain.classList.remove('page-header--opened');
     }
-  }); */
+  });
