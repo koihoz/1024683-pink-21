@@ -12,6 +12,18 @@
   width: 100%;
 }
 
+.page-header--opened .page-header__wrapper-absolute {
+  position: absolute;
+  background-color: @midnight;
+  z-index: 10;
+  width: 100%;
+}
+
+.page-header--nojs .page-header__wrapper-absolute {
+  position: relative;
+  background-color: transparent;
+}
+
 .page-header__additional-wrapper {
   width: 320px;
   margin: 0 auto;
@@ -47,6 +59,10 @@
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+.page-header--closed .page-header__toggle {
+  background-color: transparent;
 }
 
 .page-header__toggle::before {
@@ -120,6 +136,12 @@
   .page-header--opened .page-header__toggle {
     top: 29px;
     right: 0;
+  }
+
+  .page-header__toggle {
+    position: absolute;
+    top: 30px;
+    right: 10px;
   }
 }
 

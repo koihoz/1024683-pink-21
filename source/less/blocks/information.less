@@ -42,6 +42,11 @@
   bottom: -43px;
   left: 82px;
   background-image: url("../img/iphone-mobile.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/iphone-mobile@2x.png");
+    background-size: contain;
+  }
 }
 
 .information__advantages-item h3 {
@@ -80,6 +85,11 @@
     bottom: -65px;
     left: 20px;
     background-image: url("../img/iphone-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-tablet@2x.png");
+      background-size: contain;
+    }
   }
 
   .information__advantages-item h3 {
@@ -147,14 +157,35 @@
 
   .information__advantages-item--dark-img::before {
     background-image: url("../img/dark-img.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/dark-img@2x.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .information__advantages-item--nowords-img::before {
     background-image: url("../img/nowords.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/nowords@2x.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .information__advantages-item--withwords-img::before {
     background-image: url("../img/withwords.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/withwords@2x.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .information__advantages-item h3 {
