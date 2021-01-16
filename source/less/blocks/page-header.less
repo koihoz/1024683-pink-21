@@ -12,6 +12,13 @@
   width: 100%;
 }
 
+.page-header--opened .page-header__wrapper-absolute {
+  position: absolute;
+  background-color: @midnight;
+  z-index: 10;
+  width: 100%;
+}
+
 .page-header__additional-wrapper {
   width: 320px;
   margin: 0 auto;
@@ -49,6 +56,10 @@
   outline: none;
 }
 
+.page-header--closed .page-header__toggle {
+  background-color: transparent;
+}
+
 .page-header__toggle::before {
   content: "";
   position: absolute;
@@ -62,9 +73,9 @@
   z-index: 1000;
 }
 
-.page-header--nojs .page-header__toggle {
+/*.page-header--nojs .page-header__toggle {
   display: none;
-}
+} */
 
 .page-header--closed .page-header__toggle:hover::before {
   background-color: @red;
@@ -120,6 +131,12 @@
   .page-header--opened .page-header__toggle {
     top: 29px;
     right: 0;
+  }
+
+  .page-header__toggle {
+    position: absolute;
+    top: 30px;
+    right: 10px;
   }
 }
 
