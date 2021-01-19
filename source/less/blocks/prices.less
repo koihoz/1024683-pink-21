@@ -235,15 +235,15 @@
   }
 
   .prices__row .prices__black-cell:nth-child(2) {
-    border-radius: 10px 0 0 0;
+    border-radius: 1px 0 0 0;
   }
 
   .prices__row .prices__black-cell:nth-child(4) {
-    border-radius: 0 10px 0 0;
+    border-radius: 0 1px 0 0;
   }
 
   .prices__white-cell p {
-    text-transform: capitalize;
+    text-transform: initial;
     margin-top: 3px;
     margin-bottom: 0;
   }
@@ -254,6 +254,16 @@
 
   .prices__black-cell--last-column {
     border-right: none;
+  }
+
+  .prices__special::after {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    top: 0;
+    left: -2px;
+    background-image: url("../img/hit-ribbon-tablet.svg");
   }
 
   .prices__first-column {
@@ -308,7 +318,9 @@
   }
 
   .prices__row:first-of-type th .prices__circle-border {
-    padding-top: 20px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 21px;
   }
 
   .prices__row:nth-child(3) td:nth-child(4) .prices__circle-border {
@@ -316,6 +328,13 @@
     padding-bottom: 14px;
     background-position: 101px 18px;
   }
+
+  .prices__row:nth-child(3) th .prices__circle-border {
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 21px;
+  }
+
 
   .prices__name {
     font-size: 18px;
@@ -328,5 +347,16 @@
     line-height: 30px;
     margin-top: 1px;
     padding-bottom: 20px;
+  }
+
+  .prices__special::after {
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 0;
+    left: -2px;
+    background-image: url("../img/hit-ribbon.svg");
+    background-repeat: no-repeat;
   }
 }
