@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -55,5 +54,13 @@
 
   .site-list__item--active {
     border-bottom: 2px solid @color-white;
+  }
+
+  .site-list__item {
+    margin-right: 79px;
+  }
+
+  .site-list__item:last-of-type {
+    margin-right: 0;
   }
 }

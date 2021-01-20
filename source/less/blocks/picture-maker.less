@@ -102,8 +102,8 @@
 .picture-maker__slider::-moz-range-thumb {
   appearance: none;
   cursor: pointer;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   background: @color-white;
   border: 2px solid @red;
   border-radius: 10px;
@@ -159,6 +159,7 @@
 
 .picture-maker__button-submit:active {
   color: fade(@color-white, 30%);
+  background-color: @red;
 }
 
 .picture-maker__button-cancel {
@@ -174,7 +175,9 @@
 
 .picture-maker__button-cancel:active {
   color: fade(@color-white, 30%);
-  background-color: fade(@midnight, 30%);
+  background-color: @midnight;
+  border-color: @midnight;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
