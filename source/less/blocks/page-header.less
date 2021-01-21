@@ -21,7 +21,8 @@
 
 .page-header--nojs .page-header__wrapper-absolute {
   position: relative;
-  background-color: transparent;
+  background-color: @midnight;
+  margin-bottom: -67px;
 }
 
 .page-header__additional-wrapper {
@@ -143,6 +144,10 @@
     top: 30px;
     right: 10px;
   }
+
+  .page-header--nojs .page-header__wrapper-absolute {
+    margin-bottom: -110px;
+  }
 }
 
 @media (max-width: @mobile-and-tablet-width-only) {
@@ -174,5 +179,9 @@
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header--nojs .page-header__wrapper-absolute {
+    background-color: transparent;
   }
 }

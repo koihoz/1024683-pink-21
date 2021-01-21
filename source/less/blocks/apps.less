@@ -28,7 +28,7 @@
   position: relative;
 }
 
-.apps__label::before {
+.apps__span::before {
   content: "";
   position: absolute;
   width: 41px;
@@ -40,11 +40,11 @@
   top: -5px;
 }
 
-.apps__label:hover::before {
+.apps__span:hover::before {
   border-color: @midnight;
 }
 
-.apps__label:active::before {
+.apps__span:active::before {
   border-color: @red;
 }
 
@@ -65,14 +65,15 @@
   top: 8px;
 }
 
+.apps__input:focus + .apps__span::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
 @media (min-width: @tablet-width) {
   .apps {
     width: 616px;
     border: 2px solid @color-border-grey;
-    padding-top: 48px;
-    padding-left: 39px;
-    padding-bottom: 13px;
-    padding-right: 39px;
+    padding: 48px 39px 13px;
   }
 
   .apps__legend {
@@ -83,7 +84,7 @@
     margin-right: auto;
   }
 
-  .apps__label::before {
+  .apps__span::before {
     left: -62px;
   }
 
